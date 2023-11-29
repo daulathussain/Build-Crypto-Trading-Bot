@@ -6,7 +6,7 @@
 
 Build your own Decentralized Crypto trading bot from scratch and master defi trading bot development, in which you can provide users with experience and crypto trading on the blockchain.
 
-Resource Final Code: 
+Resource Final Code: https://www.theblockchaincoders.com/sourceCode/build-crypto-trading-bot-dapp-for-any-networks-from-scratch
 
 Get Pro Blockchain Developer Course: https://www.theblockchaincoders.com/pro-nft-marketplace
 
