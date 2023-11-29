@@ -1,0 +1,7162 @@
+@charset "utf-8";
+:root,
+[data-techwave-skin=light]:root {
+    --techwave-main-color: #7c5fe3;
+    --techwave-main-color1: #8768f8;
+    --techwave-main-color2: #b7a4fb
+}
+
+hr,
+select {
+    outline: 0
+}
+
+.techwave_fn_preloader,
+body {
+    background-color: var(--techwave-site-bg-color)
+}
+
+.techwave_fn_wrapper:not(.fn__has_sidebar) .techwave_fn_image_generation_page .sidebar__trigger,
+frenify_main,
+h1>a:hover,
+h2>a:hover,
+h3>a:hover,
+h4>a:hover,
+h5>a:hover,
+h6>a:hover {
+    color: var(--techwave-main-color)
+}
+
+body,
+select {
+    font-size: 16px
+}
+
+.fn__nav_bar .item_popup,
+.fn__token_info .token__popup {
+    visibility: hidden;
+    transform: translateY(20px);
+    top: 100%;
+    margin-top: -1px
+}
+
+.fn__gallery_items .author_name,
+.fn__submit input,
+.techwave_fn_button,
+.techwave_fn_changelog .item__title span,
+a.fn__like {
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+:root {
+    color-scheme: dark;
+    --techwave-site-bg-color: #0f0e11;
+    --techwave-header-bg-color: #17151b;
+    --techwave-some-r-bg-color: #17151b;
+    --techwave-some-a-bg-color: #2b2830;
+    --techwave-heading-color: #c0bcca;
+    --techwave-body-color: #7e7a86;
+    --techwave-border-color: #312e37;
+    --techwave-button-bg-color: #1c1925;
+    --techwave-hover-color: #fff;
+    --techwave-heading-font-family: 'Heebo', sans-serif;
+    --techwave-body-font-family: 'Work Sans', sans-serif;
+    --techwave-left-panel-width: 300px;
+    --techwave-header-height: 100px
+}
+
+[data-techwave-skin=light]:root {
+    color-scheme: light;
+    --techwave-site-bg-color: #fff;
+    --techwave-header-bg-color: #f5f5f5;
+    --techwave-some-r-bg-color: #f5f5f5;
+    --techwave-some-a-bg-color: #e7e7e7;
+    --techwave-heading-color: #333;
+    --techwave-body-color: #444;
+    --techwave-border-color: #ddd;
+    --techwave-button-bg-color: #f5f5f5;
+    --techwave-hover-color: #000
+}
+
+.fn__submit:hover,
+.techwave_fn_button:hover,
+.techwave_fn_leftpanel .group__list a.active .text {
+    color: var(--techwave-hover-color)
+}
+
+html {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0
+}
+
+*,
+.techwave_fn_wrapper,
+.techwave_fn_wrapper *,
+:after,
+:before {
+    box-sizing: border-box
+}
+
+body {
+    font-family: var(--techwave-body-font-family);
+    letter-spacing: 0;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--techwave-body-color);
+    position: relative;
+    word-break: break-word
+}
+
+.fn__submit input,
+.fn__token_info .token__popup,
+.fn__token_info .token_summary,
+.techwave_fn_button,
+.techwave_fn_leftpanel .group__list .count,
+.techwave_fn_leftpanel .group__list a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+select {
+    font-family: var(--techwave-heading-font-family)
+}
+
+.heading_color,
+frenify_typing span,
+h1,
+h1>a,
+h2,
+h2>a,
+h3,
+h3>a,
+h4,
+h4>a,
+h5,
+h5>a,
+h6,
+h6>a,
+select {
+    color: var(--techwave-heading-color)
+}
+
+.techwave_fn_button.small__border,
+select {
+    background-color: var(--techwave-some-a-bg-color)
+}
+
+.fn__svg {
+    fill: currentcolor;
+    width: 18px;
+    height: 18px
+}
+
+.replaced-svg {
+    opacity: 1
+}
+
+p {
+    letter-spacing: 0;
+    margin-bottom: 20px
+}
+
+.techwave_fn_sign .form__email,
+.techwave_fn_sign .form__name,
+.techwave_fn_sign .form__username,
+.techwave_fn_user_settings .settings_right .item,
+ol li {
+    margin-bottom: 17px
+}
+
+.fn__nav_bar .bar__item_language .item_popup li:last-child,
+.fn__nav_bar .bar__item_user .user_nav li:last-child,
+.techwave_fn_leftpanel .group__list li:last-child,
+.techwave_fn_leftpanel .nav_group:last-child,
+ol li:last-child {
+    margin-bottom: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.22;
+    letter-spacing: 0
+}
+
+h1>a,
+h2>a,
+h3>a,
+h4>a,
+h5>a,
+h6>a {
+    text-decoration: none
+}
+
+select:focus {
+    border-color: var(--techwave-main-color)
+}
+
+select {
+    display: block;
+    height: 40px;
+    width: 100%;
+    padding: 0 14px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    position: relative;
+    line-height: 40px
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--techwave-border-color);
+    margin: 0 0 20px
+}
+
+hr[data-h="2"] {
+    border-top-width: 2px
+}
+
+hr[data-h="3"] {
+    border-top-width: 3px
+}
+
+hr[data-h="4"] {
+    border-top-width: 4px
+}
+
+hr[data-h="5"] {
+    border-top-width: 5px
+}
+
+hr[data-h="6"] {
+    border-top-width: 6px
+}
+
+hr[data-h="7"] {
+    border-top-width: 7px
+}
+
+hr[data-h="8"] {
+    border-top-width: 8px
+}
+
+hr[data-h="9"] {
+    border-top-width: 9px
+}
+
+hr[data-h="10"] {
+    border-top-width: 10px
+}
+
+.techwave_fn_preloader.fn_ready {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+.fn__nav_bar,
+.techwave_fn_preloader.enabled,
+frenify_typing {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex
+}
+
+.techwave_fn_preloader {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    transition: .3s
+}
+
+.techwave_fn_preloader svg {
+    width: 240px;
+    height: 240px;
+    border-radius: 100%;
+    position: relative
+}
+
+.techwave_fn_preloader .first_circle {
+    fill: none;
+    stroke-width: 10px;
+    stroke: #080808
+}
+
+.techwave_fn_preloader .second_circle {
+    fill: none;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 100;
+    stroke: var(--techwave-main-color);
+    animation: 10s infinite techwave_fn_preloader;
+    position: relative;
+    z-index: 1
+}
+
+.fn__full_link,
+.fn__submit:before,
+.techwave_fn_button:before {
+    right: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0
+}
+
+@keyframes techwave_fn_preloader {
+    0%,
+    100% {
+        stroke-dasharray: 360
+    }
+    50% {
+        stroke-dasharray: 1
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 40px;
+    margin: 0 auto
+}
+
+.container.wide {
+    max-width: 1680px
+}
+
+.container.small {
+    max-width: 780px
+}
+
+.container.medium {
+    max-width: 980px
+}
+
+.clearfix:after,
+.clearfix:before,
+.container:after {
+    content: '';
+    clear: both;
+    display: table
+}
+
+.techwave_fn_button.has__icon,
+.techwave_fn_content,
+frenify_typing h3 {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+frenify_main,
+frenify_uselect {
+    -webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    -o-user-select: all;
+    user-select: all
+}
+
+frenify_typing h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex
+}
+
+frenify_typing span {
+    overflow: hidden;
+    border-right: 2px solid var(--techwave-main-color);
+    white-space: nowrap;
+    -webkit-animation: 1s steps(150, end) frenify_typing_animation, .5s step-end infinite frenify_blink_caret;
+    animation: 1s steps(150, end) frenify_typing_animation, .5s step-end infinite frenify_blink_caret
+}
+
+@keyframes frenify_typing_animation {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes frenify_blink_caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: var(--techwave-main-color)
+    }
+}
+
+.techwave_fn_wrapper.fn__has_sidebar .techwave_fn_content {
+    margin-right: 300px
+}
+
+.techwave_fn_content {
+    position: relative;
+    margin-left: var(--techwave-left-panel-width);
+    margin-top: var(--techwave-header-height);
+    min-height: calc(100vh - var(--techwave-header-height));
+    transition: .2s;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column
+}
+
+.fn__submit,
+.fn__submit input,
+.techwave_fn_button {
+    display: block;
+    background-color: var(--techwave-button-bg-color);
+    position: relative;
+    border-radius: 20px
+}
+
+.fn__submit input,
+.techwave_fn_button {
+    width: fit-content;
+    max-width: 100%;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .5px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 34px;
+    color: var(--techwave-heading-color);
+    text-transform: uppercase;
+    text-align: center;
+    outline: transparent 0;
+    overflow: hidden
+}
+
+.fn__submit input {
+    width: 100%;
+    background-color: transparent !important
+}
+
+.techwave_fn_button.medium {
+    padding: 0 97px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    font-size: 18px
+}
+
+.fn__token_info,
+.techwave_fn_header {
+    height: var(--techwave-header-height)
+}
+
+.techwave_fn_button.medium:after,
+.techwave_fn_button.medium:before {
+    border-radius: 30px
+}
+
+.rounded,
+.techwave_fn_button.small__border,
+.techwave_fn_button.small__border:after,
+.techwave_fn_button.small__border:before {
+    border-radius: 5px
+}
+
+.techwave_fn_button.small__border {
+    padding: 0 20px
+}
+
+.techwave_fn_button.has__icon {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center
+}
+
+.techwave_fn_button.has__icon .fn__svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px
+}
+
+.filter__select,
+.fn__submit input,
+.techwave_fn_button span {
+    position: relative;
+    z-index: 5
+}
+
+.techwave_fn_button span {
+    top: 1px
+}
+
+.fn__submit:hover:after,
+.techwave_fn_button:hover:after {
+    animation-duration: 2s
+}
+
+.fn__submit:after,
+.fn_contact_form .empty_notice:after,
+.fn_contact_form .returnmessage:after,
+.techwave_fn_button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background: -moz-linear-gradient(270deg, var(--techwave-main-color1), var(--techwave-main-color2), var(--techwave-main-color1), var(--techwave-main-color2)) border-box;
+    background: -webkit-linear-gradient(270deg, var(--techwave-main-color1), var(--techwave-main-color2), var(--techwave-main-color1), var(--techwave-main-color2)) border-box;
+    background: linear-gradient(270deg, var(--techwave-main-color1), var(--techwave-main-color2), var(--techwave-main-color1), var(--techwave-main-color2)) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    -webkit-mask-composite: source-out;
+    mask-composite: exclude;
+    background-size: 300% 300%;
+    -webkit-animation: 4s infinite alternate animatedgradient;
+    animation: 4s infinite alternate animatedgradient
+}
+
+.techwave_fn_button.disabled,
+.techwave_fn_leftpanel .group__list .hovered>a,
+.techwave_fn_leftpanel .group__list a.active,
+.techwave_fn_leftpanel .group__list a:hover {
+    background-color: var(--techwave-some-a-bg-color)
+}
+
+.fn__submit:before,
+.techwave_fn_button:before {
+    color: var(--techwave-main-color1);
+    content: '';
+    opacity: .1;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px
+}
+
+.panel-opened .techwave_fn_fixedsub,
+.techwave_fn_button.enabled:after {
+    display: block
+}
+
+.retina_logo,
+.short_logo,
+.techwave_fn_button.disabled:after,
+.techwave_fn_interactive_list.modern .desc,
+.techwave_fn_leftpanel .mobile_closer {
+    display: none
+}
+
+@keyframes animatedgradient {
+    0%,
+    100% {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio:1.1),
+(min-device-pixel-ratio:1.1),
+(min-resolution:120dpi) {
+    .retina_logo {
+        display: block
+    }
+    .desktop_logo {
+        display: none
+    }
+}
+
+.techwave_fn_header,
+.techwave_fn_leftpanel,
+.techwave_fn_leftpanel .group__list a,
+.techwave_fn_leftpanel .leftpanel_logo {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.techwave_fn_leftpanel {
+    z-index: 101;
+    position: fixed;
+    background-color: var(--techwave-some-r-bg-color);
+    width: var(--techwave-left-panel-width);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-right: 1px solid var(--techwave-border-color);
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    transition: .2s
+}
+
+.techwave_fn_leftpanel .leftpanel_logo {
+    min-height: var(--techwave-header-height);
+    height: var(--techwave-header-height);
+    border-bottom: 1px solid var(--techwave-border-color);
+    padding: 20px 70px 20px 30px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    position: relative
+}
+
+.techwave_fn_leftpanel .fn__icon_button {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    right: 20px;
+    z-index: 4
+}
+
+.techwave_fn_img_lightbox .img_nav.nav_prev .fn__svg,
+.techwave_fn_leftpanel .fn__icon_button .fn__svg {
+    transform: rotate(180deg)
+}
+
+.techwave_fn_leftpanel .leftpanel_content {
+    flex: 1 0 auto;
+    padding: 48px 20px;
+    overflow-y: auto;
+    height: calc(100% - var(--techwave-header-height));
+    scrollbar-width: thin;
+    scrollbar-color: #999 #fff
+}
+
+.techwave_fn_leftpanel .leftpanel_content::-webkit-scrollbar {
+    width: 4px
+}
+
+.techwave_fn_leftpanel .leftpanel_content:-webkit-scrollbar-track {
+    background: var(--techwave-some-a-bg-color)
+}
+
+.techwave_fn_leftpanel .leftpanel_content::-webkit-scrollbar-thumb {
+    background-color: var(--techwave-some-a-bg-color);
+    border-radius: 6px
+}
+
+.techwave_fn_leftpanel .nav_group {
+    margin-bottom: 38px
+}
+
+.techwave_fn_aichatbot_page .chat__sidebar .group__title,
+.techwave_fn_leftpanel .group__title {
+    margin: 0 0 12px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: .5px;
+    color: var(--techwave-body-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__nav_bar .item_opener,
+.fn__token_info .count,
+.fn__token_info .token__popup span,
+.techwave_fn_leftpanel .group__list a {
+    color: var(--techwave-heading-color)
+}
+
+.techwave_fn_leftpanel .group__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+.techwave_fn_fixedsub li,
+.techwave_fn_leftpanel .group__list li {
+    margin-bottom: 4px;
+    position: relative
+}
+
+.techwave_fn_leftpanel .group__list a {
+    font-weight: 400;
+    border-radius: 5px;
+    text-decoration: none;
+    min-height: 36px;
+    padding: 5px 10px 5px 42px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    position: relative
+}
+
+.techwave_fn_leftpanel .group__list .menu-item-has-children>a {
+    padding-right: 22px
+}
+
+.fn__nav_bar .bar__item_language.opened .item_opener,
+.fn__nav_bar .bar__item_user .user_profile a:hover,
+.fn__sup {
+    color: var(--techwave-main-color)
+}
+
+.techwave_fn_leftpanel .group__list .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -8px;
+    display: block
+}
+
+.techwave_fn_leftpanel .group__list .icon .fn__svg {
+    width: 16px;
+    height: 16px;
+    display: block
+}
+
+.techwave_fn_leftpanel .group__list .text {
+    line-height: 24px;
+    position: relative;
+    top: 1px
+}
+
+.techwave_fn_doc_page .docsidebar .trigger,
+.techwave_fn_leftpanel .group__list .trigger {
+    right: 5px;
+    top: 50%;
+    margin-top: -6px;
+    position: absolute;
+    display: block;
+    color: var(--techwave-heading-color);
+    transform: rotate(90deg);
+    transition: .2s
+}
+
+.techwave_fn_leftpanel .group__list .closed .trigger {
+    transform: rotate(-90deg)
+}
+
+.techwave_fn_doc_page .docsidebar .trigger .fn__svg,
+.techwave_fn_leftpanel .group__list .trigger .fn__svg {
+    width: 12px;
+    height: 12px;
+    display: block
+}
+
+.techwave_fn_leftpanel .group__list .count {
+    width: 24px;
+    margin-left: 10px;
+    display: inline-block;
+    height: 24px;
+    background-color: #ab0cdf;
+    color: #fff;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    font-size: 11px;
+    border-radius: 100%;
+    vertical-align: top
+}
+
+.fn__sup {
+    vertical-align: super;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: .5px;
+    margin-left: 2px
+}
+
+.techwave_fn_doc_page .docsidebar ul ul,
+.techwave_fn_leftpanel .group__list ul {
+    margin: 4px 0 0 26px;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden
+}
+
+.techwave_fn_doc_page .docsidebar ul ul a,
+.techwave_fn_leftpanel .group__list ul a {
+    padding-left: 17px
+}
+
+.techwave_fn_doc_page .docsidebar ul ul a:after,
+.techwave_fn_fixedsub a:after,
+.techwave_fn_leftpanel .group__list ul a:after {
+    width: 5px;
+    height: 2px;
+    background-color: var(--techwave-heading-color);
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    margin-top: -1px;
+    content: ''
+}
+
+@media(min-width:1041px) {
+    .panel-opened:root {
+        --techwave-left-panel-width: 76px
+    }
+    .panel-opened .techwave_fn_leftpanel .group__list .icon .fn__svg {
+        width: 18px;
+        height: 18px
+    }
+    .panel-opened .techwave_fn_leftpanel .group__list a {
+        width: 36px;
+        padding: 0
+    }
+    .panel-opened .techwave_fn_leftpanel .group__list .menu-item-has-children>a:after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #f1416c;
+        left: 50%;
+        bottom: 50%;
+        margin-left: 2px;
+        margin-bottom: 2px;
+        border-radius: 100%
+    }
+    .panel-opened .techwave_fn_leftpanel .leftpanel_logo {
+        padding: 0;
+        justify-content: center
+    }
+    .panel-opened .techwave_fn_leftpanel .short_logo {
+        display: block
+    }
+    .panel-opened .techwave_fn_leftpanel .fn__closer {
+        right: -15px;
+        transform: rotate(180deg)
+    }
+    .panel-opened .techwave_fn_leftpanel .full_logo,
+    .panel-opened .techwave_fn_leftpanel .group__list .text,
+    .panel-opened .techwave_fn_leftpanel .group__list .trigger,
+    .panel-opened .techwave_fn_leftpanel .group__title {
+        display: none
+    }
+    .panel-opened .techwave_fn_leftpanel .group__list ul {
+        display: none !important
+    }
+}
+
+.techwave_fn_header {
+    position: fixed;
+    top: 0;
+    left: var(--techwave-left-panel-width);
+    right: 0;
+    background-color: var(--techwave-header-bg-color);
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 100;
+    transition: .2s
+}
+
+.fn__token_info,
+.fn__token_info .token_summary {
+    -ms-align-items: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.techwave_fn_header:after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--techwave-border-color)
+}
+
+.fn__token_info {
+    display: flex;
+    align-items: center;
+    position: relative
+}
+
+.techwave_fn_fixedsub,
+.techwave_fn_searchbar {
+    position: fixed;
+    left: var(--techwave-left-panel-width)
+}
+
+.fn__token_info:hover .token__popup {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0)
+}
+
+.fn__token_info .token__popup {
+    opacity: 0;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    background-color: var(--techwave-header-bg-color);
+    padding: 12px 15px;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid var(--techwave-border-color);
+    font-size: 12px;
+    letter-spacing: .5px;
+    transition: .2s
+}
+
+.fn__token_info .token_summary {
+    border-radius: 5px;
+    background-color: var(--techwave-some-a-bg-color);
+    line-height: 16px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+    margin-right: 20px
+}
+
+.fn__token_info .count {
+    font-weight: 600;
+    font-size: 18px;
+    padding-right: 25px;
+    position: relative
+}
+
+.fn__token_info .text {
+    line-height: 16px;
+    font-size: 12px
+}
+
+.fn__token_info .count:after {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -15px;
+    height: 30px;
+    background-color: #413e45;
+    width: 1px
+}
+
+.fn__nav_bar .bar__item_user .user_nav a.active,
+.fn__nav_bar .bar__item_user .user_nav a:hover,
+.fn__nav_bar .item_opener,
+.techwave_fn_changelog .item__title span,
+.techwave_fn_fixedsub a.active,
+.techwave_fn_fixedsub a:hover,
+.techwave_fn_interactive_list .item:hover {
+    background-color: var(--techwave-some-a-bg-color)
+}
+
+.fn__nav_bar .bar__item {
+    height: var(--techwave-header-height);
+    position: relative;
+    margin-right: 10px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center
+}
+
+.fn__nav_bar .bar__item_user .user_profile,
+.fn__nav_bar .item_opener {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.fn__nav_bar .bar__item:last-child {
+    margin-right: 0
+}
+
+.fn__nav_bar .item_opener {
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    position: relative
+}
+
+.fn__nav_bar .item_opener:hover {
+    opacity: .8
+}
+
+.fn__nav_bar .item_opener.full_screen .f_screen {
+    opacity: 0;
+    transform: scale(.7)
+}
+
+.fn__nav_bar .item_opener.full_screen .s_screen {
+    opacity: 1;
+    transform: scale(1)
+}
+
+.fn__nav_bar .item_opener .fn__svg {
+    width: 24px;
+    height: 24px;
+    transition: .3s
+}
+
+.fn__nav_bar .item_opener .dark_mode {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -12px 0 0 -12px;
+    transform: scale(.7) rotate(-90deg)
+}
+
+[data-techwave-skin=dark] .fn__nav_bar .item_opener .light_mode,
+[data-techwave-skin=light] .fn__nav_bar .item_opener .dark_mode {
+    opacity: 1;
+    transform: scale(1) rotate(0)
+}
+
+[data-techwave-skin=light] .fn__nav_bar .item_opener .light_mode {
+    opacity: 0;
+    transform: scale(.7) rotate(90deg)
+}
+
+[data-techwave-skin=dark] .fn__nav_bar .item_opener .dark_mode {
+    opacity: 0;
+    transform: scale(.7) rotate(-90deg)
+}
+
+.fn__nav_bar .item_opener .s_screen {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -9px 0 0 -9px;
+    transform: scale(.7);
+    width: 18px;
+    height: 18px
+}
+
+.fn__nav_bar .bar__item_user {
+    margin-left: 10px
+}
+
+.fn__nav_bar .user_opener {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--techwave-border-color);
+    border-radius: 5px;
+    overflow: hidden
+}
+
+.fn__nav_bar .user_opener img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 3px
+}
+
+.fn__nav_bar .item_popup {
+    position: absolute;
+    right: 0;
+    background-color: var(--techwave-header-bg-color);
+    border: 1px solid var(--techwave-border-color);
+    border-radius: 0 0 5px 5px;
+    opacity: 0;
+    transition: .2s
+}
+
+.techwave_fn_fixedsub,
+.techwave_fn_interactive_list .item {
+    background-color: var(--techwave-some-r-bg-color);
+    transition: .2s
+}
+
+.fn__nav_bar .item_popup[data-position=left] {
+    right: auto;
+    left: 0
+}
+
+.fn__nav_bar .bar__item_user .item_popup {
+    padding: 20px;
+    width: 300px;
+    max-width: calc(100vw - 80px)
+}
+
+.fn__nav_bar .bar__item_language.opened .item_popup,
+.fn__nav_bar .bar__item_notification.opened .item_popup,
+.fn__nav_bar .bar__item_user.opened .item_popup {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0)
+}
+
+.fn__nav_bar .bar__item_user.opened .user_opener,
+.fn__nav_bar .bar__item_user:hover .user_opener {
+    border-color: var(--techwave-main-color)
+}
+
+.fn__nav_bar .bar__item_user .user_profile {
+    display: flex;
+    padding: 0 10px 20px;
+    border-bottom: 1px solid var(--techwave-border-color);
+    -ms-align-items: center;
+    align-items: center
+}
+
+.fn__nav_bar .bar__item_user .user_img {
+    margin-right: 15px;
+    width: 60px;
+    min-width: 60px
+}
+
+.fn__nav_bar .bar__item_user .user_img img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border: 2px solid var(--techwave-border-color);
+    border-radius: 5px
+}
+
+.fn__nav_bar .bar__item_user .user_name {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.fn__nav_bar .bar__item_user .user_name span {
+    height: 16px;
+    line-height: 16px;
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: #ab0cdf;
+    color: #fff;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: var(--techwave-heading-font-family);
+    margin-left: 10px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px
+}
+
+.fn__nav_bar .bar__item_language .item_popup a,
+.fn__nav_bar .bar__item_language .item_popup span,
+.fn__nav_bar .bar__item_user .user_nav a {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    -ms-align-items: center;
+    height: 36px;
+    border-radius: 5px;
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__nav_bar .bar__item_user .user_nav a,
+.fn__nav_bar .bar__item_user .user_profile a {
+    color: var(--techwave-heading-color);
+    text-decoration: none
+}
+
+.fn__nav_bar .bar__item_user .user_profile p {
+    margin: 0;
+    padding: 0;
+    font-family: var(--techwave-heading-font-family);
+    font-size: 12px;
+    letter-spacing: 0
+}
+
+.fn__nav_bar .bar__item_user .user_nav {
+    padding-top: 20px
+}
+
+.fn__nav_bar .bar__item_user .user_nav li {
+    margin-bottom: 4px
+}
+
+.fn__nav_bar .bar__item_user .user_nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+.fn__nav_bar .bar__item_user .user_nav a {
+    font-weight: 400;
+    padding: 0 10px 0 42px;
+    display: flex;
+    align-items: center;
+    position: relative
+}
+
+.fn__nav_bar .bar__item_user .user_nav .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -8px;
+    display: block
+}
+
+.fn__nav_bar .bar__item_user .user_nav .icon .fn__svg {
+    width: 16px;
+    height: 16px;
+    display: block
+}
+
+.fn__nav_bar .bar__item_user .user_nav .text {
+    position: relative;
+    top: 1px
+}
+
+.fn__nav_bar .bar__item_language .item_popup {
+    padding: 20px;
+    width: 200px;
+    max-width: calc(100vw - 80px)
+}
+
+.fn__nav_bar .bar__item_language .item_popup li {
+    margin-bottom: 4px
+}
+
+.fn__nav_bar .bar__item_language .item_popup ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+.fn__nav_bar .bar__item_language .item_popup a,
+.fn__nav_bar .bar__item_language .item_popup span {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: var(--techwave-heading-color);
+    transition: .3s
+}
+
+.fn__nav_bar .bar__item_notification .ntfc_header,
+.fn__nav_bar .bar__item_notification .ntfc_list li,
+.techwave_fn_fixedsub a,
+.techwave_fn_footer_content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.fn__nav_bar .bar__item_language .item_popup .active,
+.fn__nav_bar .bar__item_language .item_popup a:hover {
+    background-color: var(--techwave-some-a-bg-color);
+    color: var(--techwave-hover-color)
+}
+
+.fn__nav_bar .bar__item_notification .item_opener:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #f1416c;
+    border-radius: 100%;
+    top: 9px;
+    right: 10px;
+    opacity: 0;
+    visibility: hidden
+}
+
+.fn__nav_bar .bar__item_notification.has_notification .item_opener:after,
+.techwave_fn_fixedsub.opened {
+    opacity: 1;
+    visibility: visible
+}
+
+.fn__nav_bar .bar__item_notification .item_popup {
+    width: 340px;
+    padding: 20px;
+    max-width: calc(100vw - 80px)
+}
+
+.fn__nav_bar .bar__item_notification .ntfc_header {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding: 1px 15px 20px;
+    border-bottom: 1px solid var(--techwave-border-color)
+}
+
+.fn__nav_bar .bar__item_notification .ntfc_title {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-family: var(--techwave-heading-font-family);
+    color: var(--techwave-body-color)
+}
+
+.fn__nav_bar .bar__item_notification .ntfc_header a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--techwave-heading-font-family);
+    color: var(--techwave-body-color)
+}
+
+.fn__nav_bar .bar__item_notification .ntfc_header a:hover {
+    color: var(--techwave-main-color)
+}
+
+.fn__nav_bar .bar__item_notification .ntfc_list {
+    padding: 25px 15px 0
+}
+
+.fn__nav_bar .bar__item_notification .ntfc_list ul,
+.techwave_fn_changelog .item__list,
+.techwave_fn_fixedsub ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+.fn__nav_bar .bar__item_notification .ntfc_list li {
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 20px
+}
+
+.fn__members .item:last-child,
+.fn__nav_bar .bar__item_notification .ntfc_list li:last-child,
+.techwave_fn_accordion .acc__content>:last-child,
+.techwave_fn_accordion .acc__item:last-child,
+.techwave_fn_changelog .changelog__item:last-child,
+.techwave_fn_changelog .item__group:last-child,
+.techwave_fn_changelog .item__list li:last-child,
+.techwave_fn_fixedsub li:last-child,
+.techwave_fn_interactive_list.modern .icon,
+.techwave_fn_searchbar .search__results li:last-child {
+    margin-bottom: 0
+}
+
+.fn__nav_bar .bar__item_notification .ntfc_list p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--techwave-heading-font-family);
+    color: var(--techwave-heading-color)
+}
+
+.fn__nav_bar .bar__item_notification .ntfc_list p a {
+    color: var(--techwave-heading-color);
+    text-decoration: none
+}
+
+.fn__nav_bar .bar__item_notification .ntfc_list p a:hover,
+.techwave_fn_footer .menu_items a:hover {
+    color: var(--techwave-main-color)
+}
+
+.fn__nav_bar .bar__item_notification .ntfc_list span,
+.techwave_fn_footer .copyright p,
+.techwave_fn_footer .menu_items a {
+    color: var(--techwave-body-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__nav_bar .bar__item_notification .ntfc_list span {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: -1px
+}
+
+.fn__prompt_details .prompt__popup a:hover,
+.techwave_fn_searchbar .search__results a:hover,
+a.fn__like.has__like .full__like {
+    color: var(--techwave-main-color)
+}
+
+.fn__nav_bar .bar__item_search .item_popup {
+    width: 200px;
+    padding: 20px;
+    max-width: calc(100vw - 80px)
+}
+
+.techwave_fn_fixedsub {
+    opacity: 0;
+    visibility: hidden;
+    top: var(--techwave-header-height);
+    z-index: 101;
+    display: none;
+    border: 1px solid var(--techwave-border-color);
+    border-left: none;
+    margin-top: calc(var(--techwave-header-height) - 21px);
+    padding: 20px
+}
+
+.techwave_fn_fixedsub a {
+    font-weight: 400;
+    border-radius: 5px;
+    font-family: var(--techwave-heading-font-family);
+    color: var(--techwave-heading-color);
+    text-decoration: none;
+    min-height: 36px;
+    padding: 5px 10px 5px 17px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    position: relative
+}
+
+.techwave_fn_footer {
+    margin-top: auto;
+    min-height: 71px;
+    padding: 18px 40px;
+    border-top: 1px solid var(--techwave-border-color)
+}
+
+.techwave_fn_footer_content {
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center
+}
+
+.section_home,
+.techwave_fn_aichatbot_page,
+.techwave_fn_footer .menu_items ul,
+.techwave_fn_interactive_list ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.techwave_fn_footer .copyright p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    letter-spacing: .5px
+}
+
+.techwave_fn_footer .menu_items ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 -30px;
+    padding: 0;
+    list-style-type: none
+}
+
+.techwave_fn_footer .menu_items li {
+    margin: 5px 0 5px 30px
+}
+
+.techwave_fn_footer .menu_items a {
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: .5px
+}
+
+.section_home,
+.techwave_fn_aichatbot_page {
+    display: flex;
+    min-height: calc(100vh - var(--techwave-header-height) - 71px)
+}
+
+.section_home .section_left {
+    padding: 93px 40px 80px;
+    border-right: 1px solid var(--techwave-border-color);
+    width: 60%
+}
+
+.section_home .section_right {
+    width: 40%;
+    padding: 155px 40px
+}
+
+.section_home .company_info {
+    margin: 0 auto;
+    max-width: 350px
+}
+
+.section_home .company_info hr {
+    margin-bottom: 24px
+}
+
+.section_home .company_info p,
+.techwave_fn_aichatbot_page .fn__title_holder {
+    margin-bottom: 23px
+}
+
+.section_home .company_info img {
+    margin-bottom: 25px
+}
+
+.section_home .techwave_fn_title_holder,
+.techwave_fn_pricing_page .techwave_fn_title_holder {
+    margin-bottom: 43px
+}
+
+.techwave_fn_title_holder {
+    text-align: center
+}
+
+.techwave_fn_title_holder .title {
+    margin: 0 0 -1px;
+    padding: 0;
+    font-family: var(--techwave-heading-font-family);
+    color: var(--techwave-heading-color);
+    font-size: 40px
+}
+
+.techwave_fn_title_holder .desc {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--techwave-body-font-family);
+    color: var(--techwave-body-color)
+}
+
+.techwave_fn_interactive_list ul {
+    margin: 0 0 0 -20px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.techwave_fn_changelog .item__header,
+.techwave_fn_interactive_list .icon,
+.techwave_fn_interactive_list a {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.techwave_fn_interactive_list li {
+    width: 360px;
+    max-width: 50%;
+    padding-left: 20px;
+    margin-bottom: 20px
+}
+
+.techwave_fn_interactive_list .item {
+    border: 2px solid var(--techwave-border-color);
+    border-radius: 5px;
+    min-height: 100%;
+    text-align: center
+}
+
+.techwave_fn_interactive_list .item:hover {
+    border-color: var(--techwave-main-color)
+}
+
+.techwave_fn_interactive_list a {
+    text-decoration: none;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 48px 30px;
+    min-height: 100%
+}
+
+.techwave_fn_interactive_list .icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-color: var(--techwave-main-color);
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 26px
+}
+
+.techwave_fn_interactive_list .icon .fn__svg {
+    width: 50px;
+    height: 50px;
+    display: block
+}
+
+.techwave_fn_interactive_list .title {
+    margin: 0 0 20px;
+    padding: 0;
+    font-family: var(--techwave-heading-font-family);
+    color: var(--techwave-heading-color);
+    font-weight: 400;
+    font-size: 24px
+}
+
+.techwave_fn_interactive_list .desc {
+    margin: 0 0 22px;
+    padding: 0;
+    font-family: var(--techwave-body-font-family);
+    color: var(--techwave-body-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px
+}
+
+.techwave_fn_changelog .item__title span,
+.techwave_fn_changelog .item__ver,
+.techwave_fn_pagetitle .title,
+.techwave_fn_searchbar .search__input {
+    font-family: var(--techwave-heading-font-family)
+}
+
+.techwave_fn_interactive_list .arrow {
+    display: block;
+    width: 50px;
+    height: 14px;
+    color: var(--techwave-heading-color);
+    position: relative
+}
+
+.techwave_fn_interactive_list .arrow:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    top: 50%;
+    margin-top: -1px;
+    background-color: var(--techwave-heading-color);
+    transition: .3s;
+    right: 100%;
+    left: 0;
+    margin-right: 0
+}
+
+.techwave_fn_interactive_list .item:hover .arrow:after {
+    right: 0;
+    margin-right: 4px;
+    left: 0
+}
+
+.techwave_fn_interactive_list .item:hover .arrow .fn__svg {
+    right: 0;
+    margin-right: 0
+}
+
+.techwave_fn_interactive_list .arrow .fn__svg {
+    width: 14px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    right: 50%;
+    margin-right: -7px;
+    transition: .3s
+}
+
+.techwave_fn_interactive_list.modern {
+    max-width: 700px;
+    margin: 0 auto
+}
+
+.techwave_fn_interactive_list.modern li {
+    width: 100%;
+    max-width: 100%
+}
+
+.techwave_fn_interactive_list.modern a {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 18px 38px
+}
+
+.techwave_fn_interactive_list.modern .icon {
+    margin-right: 20px;
+    min-width: 60px;
+    width: 60px;
+    height: 60px
+}
+
+.fn__members .circle,
+.techwave_fn_img_lightbox .img_nav .fn__svg,
+.techwave_fn_searchbar .search__closer .fn__svg {
+    width: 12px;
+    height: 12px
+}
+
+.techwave_fn_interactive_list.modern .icon .fn__svg {
+    width: 24px;
+    height: 24px
+}
+
+.techwave_fn_interactive_list.modern .title {
+    margin-bottom: 0;
+    margin-right: 20px;
+    font-size: 20px
+}
+
+.techwave_fn_interactive_list.modern .arrow {
+    margin-left: auto
+}
+
+.fn__members .item {
+    position: relative;
+    padding-left: 22px;
+    font-size: 16px;
+    line-height: 24px;
+    min-height: 24px;
+    margin-bottom: 8px
+}
+
+.fn__members .circle {
+    border-radius: 100%;
+    display: block;
+    background-color: var(--techwave-body-color);
+    position: absolute;
+    top: 6px;
+    left: 0
+}
+
+.fn__members .active .circle {
+    background-color: #45c569
+}
+
+.fn__animated_text {
+    opacity: 0
+}
+
+.fn__animated_text.ready {
+    opacity: 1
+}
+
+.fn__animated_text span {
+    animation: .8s both fn__animated_text
+}
+
+.fn__animated_text em {
+    opacity: 0
+}
+
+@keyframes fn__animated_text {
+    0% {
+        opacity: 0
+    }
+    65% {
+        opacity: 1;
+        text-shadow: 0 0 25px #fff
+    }
+    75% {
+        opacity: .7
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.techwave_fn_pagetitle {
+    padding: 34px 40px;
+    border-bottom: 1px solid var(--techwave-border-color)
+}
+
+.techwave_fn_pagetitle .title {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    line-height: 1.364;
+    font-weight: 600;
+    color: var(--techwave-heading-color)
+}
+
+.techwave_fn_pagetitle span {
+    color: var(--techwave-body-color)
+}
+
+.change_log,
+.faq,
+.techwave_fn_doc_page .doccontent,
+.techwave_fn_notification_single_content,
+.techwave_fn_notifications_content,
+.techwave_fn_privacy_page .privacypage,
+.techwave_fn_user_billing,
+.techwave_fn_user_profile,
+.techwave_fn_user_settings {
+    padding: 40px 0
+}
+
+.techwave_fn_changelog .changelog__item {
+    border-radius: 5px;
+    border: 1px solid var(--techwave-border-color);
+    background-color: var(--techwave-some-r-bg-color);
+    margin-bottom: 40px
+}
+
+.techwave_fn_searchbar,
+.techwave_fn_searchbar .search__results {
+    border-bottom: 1px solid var(--techwave-border-color);
+    background-color: var(--techwave-header-bg-color);
+    right: 0
+}
+
+.techwave_fn_changelog .item__header {
+    padding: 24px 30px;
+    border-bottom: 1px solid var(--techwave-border-color);
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center
+}
+
+.techwave_fn_changelog .item__ver {
+    color: var(--techwave-heading-color);
+    font-size: 20px;
+    font-weight: 400
+}
+
+.techwave_fn_changelog .item__date,
+.techwave_fn_notifications_list .item__date {
+    color: var(--techwave-body-color);
+    font-family: var(--techwave-heading-font-family);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase
+}
+
+.techwave_fn_changelog .item__content {
+    padding: 40px 30px 34px
+}
+
+.techwave_fn_changelog .item__group {
+    margin-bottom: 34px
+}
+
+.techwave_fn_changelog .item__title {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-bottom: 15px
+}
+
+.techwave_fn_changelog .item__title span {
+    height: 18px;
+    line-height: 18px;
+    padding: 1px 10px 0;
+    border-radius: 9px;
+    font-weight: 500;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+    color: var(--techwave-heading-color);
+    text-transform: uppercase;
+    font-size: 11px
+}
+
+.techwave_fn_changelog .item__list li {
+    position: relative;
+    min-height: 24px;
+    line-height: 24px;
+    font-size: 18px;
+    color: var(--techwave-body-color);
+    font-weight: 400;
+    padding-left: 15px;
+    margin-bottom: 8px
+}
+
+.techwave_fn_changelog .item__list li:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 11px;
+    height: 2px;
+    background-color: var(--techwave-body-color);
+    width: 5px
+}
+
+.techwave_fn_searchbar {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100px);
+    top: 0;
+    height: var(--techwave-header-height);
+    padding: 0 40px;
+    z-index: 102;
+    transition: .3s
+}
+
+.techwave_fn_searchbar.opened {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0)
+}
+
+.techwave_fn_searchbar .search__results {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 1px;
+    padding: 46px 40px;
+    transition: .2s
+}
+
+.techwave_fn_searchbar .search__results.opened {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0)
+}
+
+.techwave_fn_searchbar .search__input {
+    height: var(--techwave-header-height);
+    padding: 0 50px 0 45px;
+    display: block;
+    width: 100%;
+    background-color: transparent !important;
+    border: none !important;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0
+}
+
+.techwave_fn_accordion .acc__item .acc__header:hover,
+.techwave_fn_accordion .acc__item.opened .acc__header,
+.techwave_fn_searchbar .search__closer {
+    background-color: var(--techwave-some-a-bg-color)
+}
+
+.techwave_fn_searchbar .results__title {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 0 0 19px
+}
+
+.techwave_fn_accordion .acc__title,
+.techwave_fn_searchbar .search__results li {
+    font-weight: 400;
+    font-family: var(--techwave-heading-font-family);
+    color: var(--techwave-heading-color)
+}
+
+.techwave_fn_searchbar .search__icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    left: 40px;
+    pointer-events: none
+}
+
+.techwave_fn_searchbar .search__closer {
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    margin-top: -15px;
+    color: var(--techwave-heading-color)
+}
+
+.fn__tabs .tab_in,
+.techwave_fn_accordion .acc__header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.techwave_fn_searchbar .search__results ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+.techwave_fn_searchbar .search__results li {
+    font-size: 16px;
+    letter-spacing: 0;
+    margin-bottom: 13px
+}
+
+.techwave_fn_searchbar .search__results a {
+    text-decoration: none;
+    color: var(--techwave-heading-color)
+}
+
+.techwave_fn_accordion.small .acc__item {
+    border-width: 1px
+}
+
+.fn__selection_box,
+.fn__tabs {
+    border-bottom: 1px solid var(--techwave-border-color)
+}
+
+.techwave_fn_accordion.small .acc__header {
+    padding: 15px 20px
+}
+
+.techwave_fn_accordion.small .acc__icon:after {
+    width: 11px;
+    height: 1px;
+    right: 20px;
+    margin-top: -1px
+}
+
+.techwave_fn_accordion.small .acc__icon:before {
+    width: 1px;
+    height: 11px;
+    right: 25px;
+    margin-top: -6px
+}
+
+.techwave_fn_accordion.small .acc__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 20px
+}
+
+.techwave_fn_accordion.small .acc__content {
+    padding: 14px 20px
+}
+
+.techwave_fn_accordion .acc__item {
+    border: 2px solid var(--techwave-border-color);
+    background-color: var(--techwave-some-r-bg-color);
+    border-radius: 5px;
+    margin-bottom: 10px
+}
+
+.techwave_fn_accordion .acc__header {
+    padding: 26px 30px;
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: .3s
+}
+
+.fn__selection_box,
+.techwave_fn_accordion .acc__content {
+    display: none;
+    border-top: 1px solid var(--techwave-border-color)
+}
+
+.techwave_fn_accordion .acc__title {
+    margin: 0;
+    padding: 0 23px 0 0;
+    font-size: 20px;
+    line-height: 1.25;
+    top: 1px
+}
+
+.techwave_fn_accordion .acc__icon:after {
+    width: 18px;
+    height: 2px;
+    background-color: var(--techwave-heading-color);
+    content: '';
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-top: -1px
+}
+
+.techwave_fn_accordion .opened .acc__icon:before {
+    transform: scale(0) rotate(90deg)
+}
+
+.techwave_fn_accordion .acc__icon:before {
+    width: 2px;
+    height: 18px;
+    background-color: var(--techwave-heading-color);
+    content: '';
+    position: absolute;
+    right: 38px;
+    top: 50%;
+    margin-top: -9px;
+    transition: .3s
+}
+
+.fn__selectable_item.selected .icon,
+.fn__tabs a:after {
+    background-color: var(--techwave-main-color)
+}
+
+.techwave_fn_accordion .acc__content {
+    padding: 24px 30px;
+    overflow: hidden
+}
+
+.techwave_fn_accordion .acc__content p {
+    margin-bottom: 18px
+}
+
+.techwave_fn_community_page,
+.techwave_fn_models_page {
+    padding: 36px 0 40px
+}
+
+.techwave_fn_community_page .fn__title_holder,
+.techwave_fn_image_generation_page .generation__sidebar .img_sizes,
+.techwave_fn_models_page .fn__title_holder {
+    margin-bottom: 28px
+}
+
+.fn__title_holder .title,
+.techwave_fn_image_generation_page .generation_header .title {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: 600
+}
+
+.fn__tabs {
+    margin-bottom: 30px
+}
+
+.fn__tabs .tab_in {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap
+}
+
+.techwave_fn_feed .feed__filter,
+.techwave_fn_feed .filter__left {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.fn__tabs a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family);
+    margin-right: 30px;
+    line-height: 40px;
+    position: relative
+}
+
+.fn__tabs a:after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    height: 2px;
+    right: 50%;
+    transition: .3s
+}
+
+.fn__tabs a.active:after {
+    left: 0;
+    right: 0;
+    opacity: 1
+}
+
+.techwave_fn_feed .feed__filter {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    margin-bottom: 30px;
+    position: relative;
+    -ms-align-items: center;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.techwave_fn_feed .filter__search a,
+.techwave_fn_feed .filter__upscaled {
+    margin: 5px 0
+}
+
+.techwave_fn_feed .filter__left {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    margin: 5px 0;
+    flex-wrap: wrap
+}
+
+.techwave_fn_feed .filter__search,
+.techwave_fn_feed .filter__sorting {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.techwave_fn_feed .filter__left>* {
+    margin-right: 30px
+}
+
+.techwave_fn_feed .filter__left>:last-child {
+    margin-right: 0
+}
+
+.techwave_fn_feed .filter__search {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.techwave_fn_feed .filter__search input,
+.techwave_fn_report .btns a {
+    margin: 5px 10px 5px 0
+}
+
+.fn__selection_box .actions a,
+.techwave_fn_feed .filter__sorting a {
+    margin: 5px 0 5px 10px
+}
+
+.techwave_fn_feed .filter__sorting {
+    display: flex;
+    margin-left: -10px
+}
+
+.fn__selection_box {
+    padding: 25px 0;
+    margin-bottom: 30px;
+    position: sticky;
+    top: var(--techwave-header-height);
+    z-index: 5;
+    background: var(--techwave-site-bg-color)
+}
+
+.fn__checkbox .fn__svg,
+.fn__checkbox input:checked~.checkmark,
+.fn__selectable_item.selected,
+.techwave_fn_img_lightbox .img_nav:hover,
+a.fn__like.has__like {
+    border-color: var(--techwave-main-color)
+}
+
+.fn__selection_box .desc {
+    margin: 0;
+    padding: 0
+}
+
+.fn__selection_box .selection_in,
+.techwave_fn_image_generation_page .generation__sidebar .contrast_switcher,
+.techwave_fn_image_generation_page .generation__sidebar .prompt_magic_switcher {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center
+}
+
+.fn__selection_box .actions,
+.techwave_fn_report .btns {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex
+}
+
+.fn__gallery_items,
+.fn__grid_items ul,
+.techwave_fn_feed .feed__more {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.techwave_fn_feed .feed__results {
+    margin-bottom: 60px;
+    position: relative
+}
+
+.techwave_fn_feed .feed__results.loading .fn__gallery_items {
+    opacity: 0;
+    visibility: hidden
+}
+
+.techwave_fn_feed .feed__results.loading .fn__preloader {
+    opacity: 1;
+    visibility: visible
+}
+
+.techwave_fn_feed .feed__more {
+    display: flex;
+    justify-content: center
+}
+
+.fn__gallery_items,
+.fn__grid_items ul {
+    margin: 0 0 0 -20px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.fn__gallery_items .item.select__ready .item__info,
+.tab__item,
+.techwave_fn_aichatbot_page .chat__item,
+.techwave_fn_pricing .pricing__tab,
+.tooltipster-sidetip.tooltipster-techwave .tooltipster-arrow-uncropped {
+    display: none
+}
+
+.fn__gallery_items .info__header,
+.fn__selectable_item,
+.fn__selectable_item .icon {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.fn__gallery_items .item.select__ready .fn__selectable_item,
+.techwave_fn_img_lightbox.opened {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all
+}
+
+.fn__selectable_item {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    color: var(--techwave-hover-color);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.fn__checkbox,
+.fn__follow {
+    font-family: var(--techwave-heading-font-family);
+    color: var(--techwave-body-color);
+    font-weight: 400
+}
+
+.fn__chat_link.opened .trigger span:after,
+.fn__icon_button .dots:after {
+    background-color: var(--techwave-heading-color)
+}
+
+.fn__selectable_item.selected:after {
+    opacity: .1
+}
+
+.fn__selectable_item:after {
+    background-color: var(--techwave-site-bg-color);
+    opacity: .6;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    content: ''
+}
+
+.fn__selectable_item .icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--techwave-some-a-bg-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center
+}
+
+.fn__selectable_item .fn__svg {
+    position: relative;
+    z-index: 3
+}
+
+.fn__gallery_item {
+    margin: 0 0 20px;
+    padding: 0 0 0 20px;
+    width: 25%
+}
+
+.fn__gallery_items .item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.fn__gallery_items .img img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%
+}
+
+.fn__gallery_items .item:hover .item__info {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0)
+}
+
+.fn__gallery_items .item__info {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 5px;
+    background-color: var(--techwave-some-r-bg-color);
+    padding: 20px 15px 19px;
+    transition: .3s
+}
+
+.fn__gallery_items .info__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    -ms-align-items: center;
+    align-items: center;
+    column-gap: 15px
+}
+
+.fn__gallery_items .user__info {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    max-width: 60%
+}
+
+.fn__gallery_items .author_name {
+    margin: 0;
+    padding: 0;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family);
+    font-size: 14px;
+    overflow: hidden
+}
+
+.fn__gallery_items .user__info img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right: 7px
+}
+
+.fn__gallery_items .item__info .desc {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical
+}
+
+a.fn__like {
+    text-decoration: none;
+    font-size: 14px;
+    overflow: hidden;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family);
+    position: relative;
+    z-index: 25;
+    padding: 0 42px 0 18px;
+    height: 40px;
+    border: 2px solid var(--techwave-some-a-bg-color);
+    border-radius: 20px;
+    line-height: 36px
+}
+
+a.fn__like .count {
+    position: relative;
+    top: 1px
+}
+
+a.fn__like .fn__svg {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 18px;
+    top: 50%;
+    margin-top: -9px;
+    opacity: 0
+}
+
+a.fn__like .empty__like {
+    opacity: 1
+}
+
+a.fn__like.has__like .empty__like {
+    opacity: 0
+}
+
+a.fn__like.has__like .full__like {
+    opacity: 1
+}
+
+a.fn__like:hover {
+    opacity: .8
+}
+
+a.fn__like.no_border {
+    border: none;
+    padding: 0 24px 0 0;
+    line-height: 16px;
+    border-radius: 0;
+    height: 16px
+}
+
+a.fn__like.no_border .fn__svg {
+    right: 0
+}
+
+.fn__checkbox {
+    margin: 0;
+    padding: 0 0 0 27px;
+    position: relative;
+    min-height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none
+}
+
+.fn__follow,
+.fn__model .model_subtitle {
+    letter-spacing: .5px;
+    font-size: 11px;
+    text-transform: uppercase
+}
+
+.fn__chat_link,
+.fn__toggle {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none
+}
+
+.fn__checkbox .fn__svg {
+    opacity: 0;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    margin-top: -6px
+}
+
+.fn__follow:hover,
+.fn__icon_button:hover {
+    opacity: .8
+}
+
+.fn__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+
+.fn__checkbox input:checked~.fn__svg {
+    opacity: 1
+}
+
+.fn__checkbox .checkmark {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 0;
+    border: 2px solid var(--techwave-border-color);
+    border-radius: 3px
+}
+
+.techwave_fn_img_lightbox,
+.techwave_fn_img_lightbox .lightbox__tlbar,
+.techwave_fn_img_lightbox .lightbox__top {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.techwave_fn_img_lightbox {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 105;
+    background-color: var(--techwave-site-bg-color);
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    overflow-y: auto;
+    pointer-events: none;
+    transition: .3s
+}
+
+.fn__follow,
+.fn__icon_button {
+    background-color: var(--techwave-some-a-bg-color)
+}
+
+.techwave_fn_img_lightbox .lightbox__top {
+    display: flex;
+    border-bottom: 1px solid var(--techwave-border-color)
+}
+
+.techwave_fn_img_lightbox .lightbox__tl {
+    width: 70%;
+    width: calc(100% - 440px)
+}
+
+.techwave_fn_img_lightbox .lightbox__tr {
+    width: 440px;
+    border-left: 1px solid var(--techwave-border-color)
+}
+
+.techwave_fn_img_lightbox .lightbox__tlbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    -ms-align-items: center;
+    align-items: center
+}
+
+.techwave_fn_img_lightbox .lightbox__tlbar_left {
+    flex: 3;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.techwave_fn_img_lightbox .lightbox__tlbar_left .item {
+    margin: 2.5px 5px 2.5px 0
+}
+
+.fn__prompt_details .prompt__popup li:last-child,
+.techwave_fn_img_lightbox .item__details>:last-child {
+    margin-bottom: 0
+}
+
+.techwave_fn_img_lightbox .lightbox__tlbar_center {
+    flex: 2;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px
+}
+
+.techwave_fn_img_lightbox .lightbox__tlbar_right {
+    flex: 3;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end
+}
+
+.techwave_fn_img_lightbox .img_nav {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--techwave-some-a-bg-color);
+    border-radius: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--techwave-heading-color)
+}
+
+.fn__follow,
+.techwave_fn_img_lightbox .user__profile,
+.techwave_fn_img_lightbox .user__profile .profile_link {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.techwave_fn_img_lightbox .lightbox__tlimg {
+    padding: 0 40px 60px;
+    text-align: center
+}
+
+.techwave_fn_img_lightbox .user__profile {
+    padding: 20px 70px 20px 20px;
+    position: relative;
+    position: sticky;
+    top: 0;
+    background-color: var(--techwave-site-bg-color);
+    z-index: 2;
+    border-bottom: 1px solid var(--techwave-border-color);
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%
+}
+
+.techwave_fn_img_lightbox .user__profile .profile_link {
+    display: flex;
+    text-decoration: none;
+    -ms-align-items: center;
+    align-items: center;
+    margin-right: 10px;
+    max-width: 55%
+}
+
+.techwave_fn_img_lightbox .user__profile .profile_link .user_name {
+    margin: 0;
+    padding: 0;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px
+}
+
+.techwave_fn_img_lightbox .user__profile .profile_link img {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
+    object-fit: cover
+}
+
+.techwave_fn_img_lightbox .fn__closer {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -15px
+}
+
+.techwave_fn_aichatbot_page .chat__sidebar .sidebar_header,
+.techwave_fn_img_lightbox .item__details {
+    padding: 20px;
+    border-bottom: 1px solid var(--techwave-border-color)
+}
+
+.techwave_fn_img_lightbox .item__details>* {
+    margin-bottom: 10px
+}
+
+.techwave_fn_img_lightbox .lightbox__related {
+    padding: 36px 40px 20px
+}
+
+.fn__model .model_subtitle,
+.fn__model .model_title {
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.techwave_fn_img_lightbox .lightbox__related .fn__title_holder {
+    margin-bottom: 33px
+}
+
+.fn__follow {
+    padding: 0 10px;
+    position: relative;
+    display: flex;
+    height: 24px;
+    white-space: nowrap;
+    max-width: 100%;
+    text-decoration: none;
+    border-radius: 12px;
+    line-height: 24px
+}
+
+.fn__icon_button,
+.fn__model {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.fn__follow.has__follow {
+    background-color: #f1416c;
+    color: #fff
+}
+
+.fn__icon_button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--techwave-heading-color)
+}
+
+.fn__model,
+.fn__prompt_details,
+.techwave_fn_report .report__content,
+.techwave_fn_sign .form__content {
+    background-color: var(--techwave-some-r-bg-color)
+}
+
+.fn__icon_button .dots {
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 3px;
+    border-left: 3px solid var(--techwave-heading-color);
+    border-right: 3px solid var(--techwave-heading-color)
+}
+
+.fn__icon_button .dots:after {
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    left: 3px;
+    content: '';
+    position: absolute
+}
+
+.filter__select .item__popup ul,
+.fn__backto a,
+.fn__prompt_details .prompt__popup ul,
+.techwave_fn_notifications_list .notification__item:hover,
+.techwave_fn_pricing .pricing__toggle .bg {
+    background-color: var(--techwave-some-a-bg-color)
+}
+
+.fn__icon_button .fn__svg {
+    width: 12px;
+    height: 12px
+}
+
+.fn__model {
+    position: relative;
+    border: 1px solid var(--techwave-border-color);
+    border-radius: 5px;
+    padding: 10px 70px 10px 20px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center
+}
+
+.fn__details_list ul,
+.fn__preloader,
+.techwave_fn_report {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.fn__model .fn__icon_button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -15px
+}
+
+.fn__model .model_img img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px
+}
+
+.fn__model .model_subtitle {
+    margin: 0 0 5px;
+    font-weight: 500;
+    color: var(--techwave-body-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__model .model_title,
+.fn__prompt_details .prompt__popup a,
+.fn__prompt_details .prompt__popup li,
+.fn__prompt_details .prompt__text {
+    font-weight: 400;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__model .model_title {
+    margin: 0;
+    letter-spacing: 0;
+    font-size: 16px
+}
+
+.fn__prompt_details {
+    position: relative;
+    border: 1px solid var(--techwave-border-color);
+    border-radius: 5px
+}
+
+.techwave_fn_report,
+.techwave_fn_sign {
+    background-color: var(--techwave-site-bg-color)
+}
+
+.fn__prompt_details .prompt__content {
+    padding: 0 20px 15px
+}
+
+.fn__prompt_details .prompt__content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px
+}
+
+.fn__prompt_details .prompt__text {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase
+}
+
+.fn__prompt_details .prompt__options:hover .prompt__popup {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0)
+}
+
+.fn__prompt_details .prompt__popup {
+    right: 0;
+    position: absolute;
+    top: 100%;
+    padding-top: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: .3s
+}
+
+.fn__prompt_details .prompt__popup ul {
+    width: 180px;
+    list-style-type: none;
+    border-radius: 5px;
+    margin: 0;
+    padding: 15px 20px
+}
+
+.fn__prompt_details .prompt__popup a {
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden
+}
+
+.fn__prompt_details .prompt__popup li {
+    margin: 0 0 3px;
+    font-size: 16px
+}
+
+.fn__prompt_details .prompt__options {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -15px
+}
+
+.fn__prompt_details .prompt__header {
+    position: relative;
+    padding: 15px 70px 10px 20px
+}
+
+.fn__details_list {
+    padding: 27px 30px 3px
+}
+
+.fn__details_list ul {
+    margin: 0 0 0 -30px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.fn__details_list li {
+    padding-left: 30px;
+    margin-bottom: 20px;
+    width: 50%
+}
+
+.fn__details_list .sub_title {
+    margin: 0 0 1px;
+    padding: 0;
+    font-weight: 500;
+    letter-spacing: .5px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--techwave-body-color);
+    font-family: var(--techwave-heading-font-family);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.fn__details_list .title,
+.fn__preloader .text,
+.techwave_fn_font .title,
+.techwave_fn_report .subtitle,
+.techwave_fn_report .title {
+    font-family: var(--techwave-heading-font-family);
+    color: var(--techwave-heading-color)
+}
+
+.fn__details_list .title {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 16px
+}
+
+.fn__grid_items li {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    width: 16.6666%
+}
+
+.fn__grid_items img {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: .3s
+}
+
+.fn__grid_items img:hover {
+    -webkit-filter: brightness(.5);
+    filter: brightness(.5)
+}
+
+.techwave_fn_report {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 110;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    padding: 40px
+}
+
+.techwave_fn_font.opened,
+.techwave_fn_report.opened {
+    pointer-events: all;
+    opacity: 1;
+    visibility: visible
+}
+
+.techwave_fn_report .report__closer {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.techwave_fn_report .report__content {
+    width: 600px;
+    max-width: 100%;
+    border-radius: 5px;
+    padding: 30px 30px 25px;
+    position: relative;
+    border: 1px solid var(--techwave-border-color);
+    z-index: 3
+}
+
+.techwave_fn_report .fn__closer {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 2
+}
+
+.techwave_fn_font .title,
+.techwave_fn_report .title {
+    text-align: center;
+    margin: 0 0 4px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0
+}
+
+.techwave_fn_report .subtitle {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px
+}
+
+.techwave_fn_report .reason_field {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 50px;
+    border-radius: 5px
+}
+
+.techwave_fn_report .btns .cancel {
+    opacity: .6
+}
+
+.fn__preloader {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    border: 2px solid var(--techwave-border-color);
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+
+.fn__preloader .text {
+    display: block;
+    font-size: 18px;
+    letter-spacing: .25px;
+    text-transform: uppercase;
+    font-weight: 600
+}
+
+.fn__lined_text .text,
+.techwave_fn_sign .form__title,
+.techwave_fn_sign .pass_lab a,
+.techwave_fn_sign .sign__desc p {
+    font-family: var(--techwave-body-font-family)
+}
+
+.fn__preloader .icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+    border: 4px solid transparent;
+    border-top-color: var(--techwave-hover-color);
+    border-right-color: var(--techwave-hover-color);
+    border-bottom-color: var(--techwave-hover-color);
+    border-radius: 100%;
+    animation: 1s linear infinite techwave_spin;
+    margin-bottom: 15px
+}
+
+.fn__preloader.loading {
+    opacity: 1;
+    visibility: visible
+}
+
+@keyframes techwave_spin {
+    0% {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.techwave_fn_sign {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 110;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    padding: 50px 40px
+}
+
+.techwave_fn_sign .logo {
+    background-image: none, url(../img/logo-desktop-full.png);
+    background-size: 141px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #3c434a;
+    height: 17px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0 auto 50px;
+    padding: 0;
+    text-decoration: none;
+    width: 141px;
+    text-indent: -9999px;
+    outline: 0;
+    overflow: hidden;
+    display: block
+}
+
+.fn__lined_text,
+.techwave_fn_sign .pass_lab {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.techwave_fn_sign .sign__desc p {
+    margin: 25px 0 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: var(--techwave-body-color)
+}
+
+.techwave_fn_sign .sign__desc p a {
+    text-decoration: none;
+    color: var(--techwave-heading-color)
+}
+
+.techwave_fn_sign .pass_lab a:hover,
+.techwave_fn_sign .sign__desc p a:hover {
+    text-decoration: underline
+}
+
+.techwave_fn_sign .sign__content {
+    width: 500px;
+    max-width: 100%
+}
+
+.techwave_fn_sign .form__content {
+    width: 100%;
+    border-radius: 5px;
+    padding: 36px 50px 40px;
+    position: relative;
+    border: 1px solid var(--techwave-border-color)
+}
+
+.techwave_fn_sign .pass_lab {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between
+}
+
+.techwave_fn_sign .pass_lab a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--techwave-main-color);
+    line-height: 40px
+}
+
+.techwave_fn_sign .form__title {
+    text-align: center;
+    font-size: 24px;
+    margin: 0 0 3px;
+    font-weight: 500;
+    color: var(--techwave-heading-color);
+    line-height: 1
+}
+
+.techwave_fn_sign label,
+.techwave_fn_user_settings .input_label {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--techwave-body-font-family);
+    color: var(--techwave-heading-color);
+    line-height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.techwave_fn_sign input[type=password],
+.techwave_fn_sign input[type=text] {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    height: 60px;
+    min-width: 100%
+}
+
+.techwave_fn_sign .fn__lined_text,
+.techwave_fn_sign .form__submit {
+    margin-bottom: 14px
+}
+
+.fn__lined_text {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%
+}
+
+.fn__backto,
+.techwave_fn_notifications_list .notification__item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.fn__lined_text .line {
+    width: 50%;
+    height: 1px;
+    background-color: var(--techwave-border-color)
+}
+
+.fn__backto a,
+.techwave_fn_pricing .popular {
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: 0
+}
+
+.fn__lined_text .text {
+    white-space: nowrap;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--techwave-body-color);
+    padding: 0 10px
+}
+
+.filter__select .item__popup a,
+.filter__select .item__popup li,
+.fn__backto a,
+.techwave_fn_notifications_list .item__title {
+    font-family: var(--techwave-heading-font-family);
+    color: var(--techwave-heading-color);
+    font-weight: 400
+}
+
+.techwave_fn_sign .form__alternative a {
+    width: 100%
+}
+
+.techwave_fn_font select,
+.techwave_fn_image_generation_page .generation__sidebar .prompt_magic_switcher,
+.techwave_fn_sign .form__pass {
+    margin-bottom: 30px
+}
+
+.filter__select .item__popup {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 140px;
+    margin: 0;
+    padding: 5px 0 0;
+    transition: .3s
+}
+
+.filter__select:hover .item__popup {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0)
+}
+
+.filter__select .item__popup ul {
+    list-style-type: none;
+    border-radius: 5px;
+    margin: 0;
+    padding: 15px 20px
+}
+
+.filter__select .item__popup li:last-child,
+.techwave_fn_notifications_list .notification__item:last-child,
+.techwave_fn_user_settings .settings_right .item:last-child {
+    margin-bottom: 0
+}
+
+.filter__select .item__popup li {
+    margin: 0 0 3px;
+    font-size: 16px
+}
+
+.filter__select .item__popup a {
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden
+}
+
+.fn__backto a:hover,
+.techwave_fn_pricing .pricing__toggle a:hover {
+    color: var(--techwave-main-color)
+}
+
+.filter__select .item__popup a:hover {
+    color: var(--techwave-main-color);
+    opacity: .9
+}
+
+.techwave_fn_notifications_list .notification__item {
+    padding: 24px 30px;
+    border-radius: 5px;
+    border: 1px solid var(--techwave-border-color);
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    background-color: var(--techwave-some-r-bg-color);
+    margin-bottom: 10px;
+    position: relative;
+    transition: .3s
+}
+
+.techwave_fn_notifications_list .item__title {
+    font-size: 20px;
+    margin: 0;
+    padding: 0
+}
+
+.fn__backto {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center
+}
+
+.fn__backto a {
+    text-decoration: none;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 13px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block
+}
+
+.techwave_fn_pricing .pricing__header .price,
+.techwave_fn_pricing .pricing__header .title,
+.techwave_fn_pricing .pricing__toggle a {
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__backto a .text {
+    position: relative;
+    top: 1px
+}
+
+.fn__backto a .fn__svg {
+    transform: rotate(180deg);
+    width: 12px;
+    height: 12px;
+    left: 10px;
+    top: 50%;
+    margin-top: -6px;
+    position: absolute
+}
+
+.techwave_fn_pricing .pricing__footer a,
+.techwave_fn_pricing .pricing__header .purchase a {
+    width: 100%
+}
+
+.techwave_fn_pricing_page {
+    padding: 93px 0 100px
+}
+
+.techwave_fn_pricing_page .techwave_fn_pricing {
+    margin-bottom: 111px
+}
+
+.techwave_fn_pricing .pricing__tab.active {
+    display: block
+}
+
+.techwave_fn_pricing .item_row,
+.techwave_fn_pricing .pricing__toggle,
+.techwave_fn_pricing .pricing__toggle .toggle_in {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.techwave_fn_pricing .pricing__toggle {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px
+}
+
+.techwave_fn_pricing .pricing__toggle .bg {
+    position: absolute;
+    height: 40px;
+    top: 9px;
+    left: 50%;
+    border-radius: 20px;
+    z-index: 1;
+    transition: .3s;
+    width: 0
+}
+
+.techwave_fn_pricing .pricing__toggle .toggle_in {
+    border: 1px solid var(--techwave-border-color);
+    border-radius: 60px;
+    padding: 9px;
+    display: flex;
+    position: relative
+}
+
+.techwave_fn_pricing .pricing__toggle a {
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 35px;
+    font-size: 14px;
+    margin: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2
+}
+
+.techwave_fn_pricing .pricing__content {
+    border: 1px solid var(--techwave-border-color);
+    border-radius: 5px;
+    background-color: var(--techwave-some-r-bg-color)
+}
+
+.techwave_fn_pricing .popular {
+    position: absolute;
+    top: 0;
+    margin-top: -16px;
+    background-color: #ab0cdf;
+    border-radius: 15px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--techwave-heading-font-family);
+    padding: 0 18px;
+    font-size: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 3
+}
+
+.techwave_fn_pricing .popular * {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: block
+}
+
+.techwave_fn_pricing .popular:after {
+    content: '';
+    left: 50%;
+    margin-left: -6px;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 6px 0;
+    border-color: #ab0cdf transparent transparent;
+    position: absolute
+}
+
+.fn__mobile_pricing .pricing__item_footer,
+.techwave_fn_pricing .pricing__footer {
+    border-top: 1px solid var(--techwave-border-color)
+}
+
+.techwave_fn_pricing .item_row {
+    margin-left: -1px;
+    display: flex;
+    text-align: center
+}
+
+.techwave_fn_pricing .item_row .item_col:first-child {
+    width: 31%;
+    max-width: 31%;
+    text-align: left;
+    justify-content: flex-start
+}
+
+.techwave_fn_pricing .item_row .item_col {
+    width: 23%;
+    max-width: 23%;
+    border-left: 1px solid var(--techwave-border-color);
+    position: relative
+}
+
+.techwave_fn_pricing .pricing__header .title {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    letter-spacing: 0
+}
+
+.techwave_fn_pricing .pricing__header .price {
+    margin: 0 0 11px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 500
+}
+
+.techwave_fn_pricing .pricing__header .price span {
+    font-size: 36px;
+    font-weight: 500
+}
+
+.techwave_fn_pricing .pricing__header .desc {
+    margin: 0 0 24px;
+    padding: 0;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--techwave-body-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.techwave_fn_pricing .pricing__header .desc span {
+    color: var(--techwave-heading-color)
+}
+
+.techwave_fn_pricing .pricing__header .purchase {
+    padding: 0;
+    margin: 0
+}
+
+.techwave_fn_pricing .pricing__header .item_col {
+    padding: 35px 30px 40px
+}
+
+.techwave_fn_pricing .pricing__heading {
+    background-color: var(--techwave-some-a-bg-color);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin: 0 -1px
+}
+
+.techwave_fn_pricing .pricing__heading .item.wide {
+    width: 69%;
+    max-width: 69%
+}
+
+.techwave_fn_pricing .pricing__heading .item {
+    height: 54px;
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 0 30px;
+    width: 31%;
+    max-width: 31%
+}
+
+.fn__mobile_pricing .pricing__item__heading,
+.techwave_fn_pricing .pricing__fields .item_col {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    -ms-align-items: center
+}
+
+.techwave_fn_pricing .pricing__heading .title {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.techwave_fn_pricing .pricing__heading .item_col:first-child {
+    padding: 0 40px
+}
+
+.techwave_fn_pricing .pricing__heading .item.wide:after {
+    content: '';
+    left: 30px;
+    right: 30px;
+    position: absolute;
+    height: 4px;
+    border-radius: 5px;
+    top: 50%;
+    margin-top: -2px;
+    background-color: var(--techwave-site-bg-color)
+}
+
+.techwave_fn_pricing .pricing__fields .item_row:first-child .item_col {
+    padding-top: 35px
+}
+
+.techwave_fn_pricing .pricing__fields .item_row:last-child .item_col {
+    padding-bottom: 24px
+}
+
+.techwave_fn_pricing .pricing__fields .item_col {
+    padding: 9px 30px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.techwave_fn_pricing .pricing__fields .heading_text,
+.techwave_fn_pricing .pricing__fields .option_text {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: .5px;
+    font-weight: 400;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.techwave_fn_pricing .pricing__footer .item_col {
+    padding: 40px 30px
+}
+
+.fn__mobile_pricing {
+    display: none;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    text-align: center
+}
+
+.fn__mobile_pricing .pricing__item {
+    width: 33.3333%;
+    padding-left: 20px;
+    margin-bottom: 20px
+}
+
+.fn__mobile_pricing .pricing__item_holder {
+    width: 100%;
+    background-color: var(--techwave-some-r-bg-color);
+    border: 1px solid var(--techwave-border-color);
+    border-radius: 5px;
+    position: relative
+}
+
+.fn__mobile_pricing .pricing__item__header {
+    padding: 35px 10px 40px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center
+}
+
+.fn__mobile_pricing .pricing__item__header .title {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    letter-spacing: 0;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__mobile_pricing .pricing__item__header .price {
+    margin: 0 0 11px;
+    padding: 0;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family);
+    font-size: 14px;
+    font-weight: 500
+}
+
+.fn__mobile_pricing .pricing__item__header .price span {
+    font-size: 36px;
+    font-weight: 500
+}
+
+.fn__mobile_pricing .pricing__item__header .desc {
+    margin: 0 0 24px;
+    padding: 0;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--techwave-body-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__mobile_pricing .pricing__item__header .desc span {
+    color: var(--techwave-heading-color)
+}
+
+.fn__mobile_pricing .pricing__item__header .purchase {
+    padding: 0;
+    margin: 0
+}
+
+.fn__mobile_pricing .pricing__item__header .purchase a {
+    width: 100%
+}
+
+.fn__mobile_pricing .pricing__item__heading {
+    background-color: var(--techwave-some-a-bg-color);
+    padding: 0 10px;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.fn__upload,
+.techwave_fn_user_billing .billing__plan,
+.techwave_fn_user_profile .user__plan,
+.techwave_fn_user_profile .user__profile {
+    background-color: var(--techwave-some-r-bg-color)
+}
+
+.fn__mobile_pricing .pricing__item_footer,
+.fn__mobile_pricing .pricing__item_list_item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    -ms-align-items: center
+}
+
+.fn__mobile_pricing .pricing__item__heading .title {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__mobile_pricing .pricing__item_list .desc,
+.fn__mobile_pricing .pricing__item_list .title {
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: .5px;
+    font-family: var(--techwave-heading-font-family);
+    padding: 0
+}
+
+.fn__mobile_pricing .pricing__item_list {
+    padding: 10px 0
+}
+
+.fn__mobile_pricing .pricing__item_list_item {
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px
+}
+
+.fn__mobile_pricing .pricing__item_list .title {
+    font-size: 14px;
+    color: var(--techwave-body-color);
+    text-align: left
+}
+
+.fn__mobile_pricing .pricing__item_list .desc {
+    font-size: 16px;
+    color: var(--techwave-heading-color);
+    text-align: right;
+    white-space: nowrap
+}
+
+.fn__mobile_pricing .pricing__item_footer {
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.techwave_fn_user_profile .user__profile {
+    border-radius: 5px;
+    border: 1px solid var(--techwave-border-color);
+    position: relative;
+    padding: 30px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    margin-bottom: 10px
+}
+
+.techwave_fn_user_profile .user__profile .user_edit {
+    position: absolute;
+    top: 30px;
+    right: 30px
+}
+
+.techwave_fn_user_profile .user__profile .user_edit .fn__svg {
+    width: 16px;
+    height: 16px
+}
+
+.techwave_fn_user_profile .user__profile .user_avatar {
+    width: 200px;
+    min-width: 200px;
+    margin-right: 30px
+}
+
+.techwave_fn_user_profile .user__profile .user_avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 5px
+}
+
+.fn__generation_list,
+.fn__model_items,
+.techwave_fn_user_profile .user__profile .user_details ul {
+    margin: 0 0 0 -20px;
+    padding: 0;
+    list-style-type: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.techwave_fn_user_profile .user__profile .user_details li {
+    margin: 11px 0;
+    padding: 0 0 0 20px;
+    width: 50%
+}
+
+.techwave_fn_user_profile .user__profile .subtitle {
+    margin: 0 0 7px;
+    padding: 0;
+    font-weight: 500;
+    letter-spacing: .5px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--techwave-body-color);
+    font-family: var(--techwave-heading-font-family);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.techwave_fn_user_profile .user__profile .title {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 16px;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.techwave_fn_user_profile .user__plan {
+    border-radius: 5px;
+    border: 1px solid var(--techwave-border-color);
+    position: relative;
+    padding: 38px 30px 33px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 38px;
+    column-gap: 30px
+}
+
+.fn__options_list ul,
+.fn__upload .upload_content,
+.techwave_fn_user_settings .user__settings {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.techwave_fn_user_profile .user__plan .subtitle {
+    margin: 0 0 4px;
+    padding: 0;
+    font-weight: 500;
+    letter-spacing: .5px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--techwave-body-color);
+    font-family: var(--techwave-heading-font-family);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.techwave_fn_user_profile .user__plan .info {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 16px;
+    color: var(--techwave-body-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.techwave_fn_user_profile .user__plan .info span {
+    color: var(--techwave-heading-color)
+}
+
+.techwave_fn_user_profile .user__interests .title {
+    margin: 0 0 14px;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 16px;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__chat_link .options__list button:hover,
+.techwave_fn_user_billing .payment__methods .ready .edit_wrapper .edit__popup a:hover {
+    color: var(--techwave-main-color)
+}
+
+.fn__options_list ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 -10px;
+    padding: 0;
+    list-style-type: none
+}
+
+.fn__options_list li {
+    padding-left: 10px;
+    margin-bottom: 10px
+}
+
+.techwave_fn_user_settings .user__settings {
+    display: flex;
+    column-gap: 40px
+}
+
+.techwave_fn_user_settings .settings_left {
+    width: 300px;
+    max-width: 50%
+}
+
+.techwave_fn_user_settings .settings_right {
+    flex: auto;
+    max-width: 50%
+}
+
+.fn__chat_comment,
+.fn__icon_options,
+.fn__select_model,
+.techwave_fn_models .models__results,
+.techwave_fn_user_billing .payment__methods .ready .edit_wrapper,
+.techwave_fn_user_settings .input_item {
+    position: relative
+}
+
+.techwave_fn_user_settings .input_item .email {
+    margin: -15px 0 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    border-radius: 5px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--techwave-some-a-bg-color);
+    left: 12px;
+    color: var(--techwave-main-color);
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-family: var(--techwave-body-font-family);
+    pointer-events: none
+}
+
+.fn_contact_form .input_list input[type=email],
+.fn_contact_form .input_list input[type=text],
+.techwave_fn_user_settings .input {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    height: 60px
+}
+
+.techwave_fn_user_settings .settings_right .fn__checkbox {
+    margin: 30px 0;
+    display: block;
+    width: fit-content;
+    max-width: 100%
+}
+
+.techwave_fn_user_settings #username {
+    padding-left: 50px
+}
+
+.fn__upload {
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 2px dashed var(--techwave-border-color);
+    border-radius: 5px;
+    padding: 46px;
+    transition: .3s;
+    position: relative;
+    display: block;
+    overflow: hidden
+}
+
+.fn__upload .upload_content {
+    width: 100%;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    min-height: 100%
+}
+
+.fn__upload.has_img {
+    border-color: var(--techwave-main-color)
+}
+
+.fn__upload.has_img .upload_content {
+    opacity: 0
+}
+
+.fn__upload .upload_preview {
+    opacity: 0;
+    visibility: hidden;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center
+}
+
+.fn__upload.has_img .upload_preview {
+    opacity: 1;
+    visibility: visible
+}
+
+.fn__upload:hover {
+    opacity: .8
+}
+
+.fn__upload .preview_img {
+    object-fit: cover
+}
+
+.fn__upload .preview_img[src="#"] {
+    opacity: 0
+}
+
+.fn__upload input[type=file] {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer
+}
+
+.fn__upload .upload_content .fn__svg {
+    width: 70px;
+    height: auto;
+    color: var(--techwave-heading-color);
+    margin-bottom: 15px
+}
+
+.fn__upload .upload_content .fn__lined_text,
+.techwave_fn_image_generation_page .generation__sidebar .guidance_scale .title {
+    margin-bottom: 4px
+}
+
+.fn__upload .upload_content .title,
+.techwave_fn_user_billing .payment__methods .ready .title {
+    margin: 0 0 3px;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 16px;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__upload .upload_content .desc {
+    margin: 0;
+    padding: 6px 0 0;
+    font-size: 12px;
+    color: var(--techwave-body-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.techwave_fn_user_billing .billing__plan .desc,
+.techwave_fn_user_billing .billing__plan .title {
+    letter-spacing: 0;
+    font-size: 16px;
+    font-family: var(--techwave-heading-font-family);
+    padding: 0;
+    font-weight: 400
+}
+
+.fn__upload .fn__closer {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 3
+}
+
+.techwave_fn_user_billing .billing__plan {
+    border-radius: 5px;
+    border: 1px solid var(--techwave-border-color);
+    position: relative;
+    padding: 28px 30px 23px;
+    margin-bottom: 10px
+}
+
+.techwave_fn_user_billing .billing__plan .title {
+    margin: 0 0 4px;
+    color: var(--techwave-heading-color)
+}
+
+.techwave_fn_user_billing .billing__plan .desc {
+    margin: 0;
+    color: var(--techwave-body-color)
+}
+
+.fn__chatbot .author,
+.techwave_fn_user_billing .billing__plan .plan {
+    position: absolute;
+    left: 30px;
+    top: -10px;
+    display: block;
+    height: 20px;
+    padding: 0 15px;
+    background-color: var(--techwave-main-color);
+    color: #fff;
+    font-family: var(--techwave-heading-font-family);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    line-height: 20px;
+    border-radius: 10px
+}
+
+.techwave_fn_user_billing .billing__plan .plan * {
+    position: relative;
+    top: 1px
+}
+
+.techwave_fn_user_billing .billing__activation {
+    margin-bottom: 39px
+}
+
+.techwave_fn_user_billing .billing__activation .activation_status .title {
+    margin: 0 0 5px;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 16px;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.techwave_fn_user_billing .billing__activation .activation_status .desc,
+.techwave_fn_user_billing .payment__methods .ready .subtitle {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 16px;
+    color: var(--techwave-body-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.techwave_fn_user_billing .billing__activation .status_right .info,
+.techwave_fn_user_billing .payment__methods .new .text,
+.techwave_fn_user_billing .payment__methods .ready .primary {
+    font-weight: 500;
+    letter-spacing: .5px;
+    font-family: var(--techwave-heading-font-family);
+    text-transform: uppercase
+}
+
+.techwave_fn_user_billing .billing__activation .activation_status {
+    border-radius: 5px;
+    background-color: var(--techwave-some-r-bg-color);
+    border: 1px solid var(--techwave-border-color);
+    position: relative;
+    padding: 28px 30px 23px;
+    margin-bottom: 15px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px
+}
+
+.techwave_fn_user_billing .billing__activation .status_right {
+    width: 150px;
+    max-width: 50%;
+    text-align: right
+}
+
+.techwave_fn_user_billing .billing__activation .status_right .info {
+    display: block;
+    font-size: 11px;
+    color: var(--techwave-body-color);
+    line-height: 1;
+    margin-bottom: 6px
+}
+
+.techwave_fn_user_billing .billing__activation .status_right .progress {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--techwave-some-a-bg-color);
+    border-radius: 4px;
+    position: relative
+}
+
+.techwave_fn_user_billing .billing__activation .status_right .progress.active:after {
+    width: var(--frenify-progress)
+}
+
+.techwave_fn_user_billing .billing__activation .status_right .progress:after {
+    right: 0;
+    top: 0;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--techwave-main-color);
+    border-radius: 4px;
+    width: 0;
+    transition: .3s;
+    content: ''
+}
+
+.techwave_fn_user_billing .billing__activation .activation_actions {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.techwave_fn_user_billing .billing__activation .activation_actions a {
+    margin: 5px 10px 5px 0
+}
+
+.fn__chat_link .options__list button:last-child,
+.techwave_fn_user_billing .payment__methods .ready .edit_wrapper .edit__popup li:last-child {
+    margin-bottom: 0
+}
+
+.techwave_fn_user_billing .payment__methods .title {
+    margin: 0 0 22px;
+    padding: 0;
+    font-size: 22px;
+    line-height: 1.364;
+    font-weight: 600;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.techwave_fn_user_billing .payment__methods .payment__list {
+    margin: 0 0 0 -20px;
+    list-style-type: none;
+    padding: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.techwave_fn_user_billing .payment__methods .payment__list_item {
+    margin: 0 0 20px;
+    padding: 0 0 0 20px;
+    width: 50%
+}
+
+.techwave_fn_user_billing .payment__methods .ready .item {
+    border-radius: 5px;
+    background-color: var(--techwave-some-r-bg-color);
+    border: 1px solid var(--techwave-border-color);
+    position: relative
+}
+
+.techwave_fn_user_billing .payment__methods .ready .item_header {
+    padding: 17px 15px 13px;
+    border-bottom: 1px solid var(--techwave-border-color)
+}
+
+.techwave_fn_user_billing .payment__methods .ready .action {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0 15px;
+    -ms-align-items: center;
+    align-items: center
+}
+
+.techwave_fn_user_billing .payment__methods .ready .edit_wrapper .options {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center
+}
+
+.techwave_fn_user_billing .payment__methods .ready .edit_wrapper .dots {
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 3px;
+    border-left: 3px solid var(--techwave-heading-color);
+    border-right: 3px solid var(--techwave-heading-color)
+}
+
+.techwave_fn_user_billing .payment__methods .ready .edit_wrapper .dots:after {
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    left: 3px;
+    content: '';
+    position: absolute;
+    background-color: var(--techwave-heading-color)
+}
+
+.techwave_fn_user_billing .payment__methods .ready .edit_wrapper:hover .edit__popup {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0)
+}
+
+.techwave_fn_user_billing .payment__methods .ready .edit_wrapper .edit__popup {
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    width: 140px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    transform: translateY(-20px)
+}
+
+.techwave_fn_user_billing .payment__methods .ready .edit_wrapper .edit__popup a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family);
+    text-decoration: none;
+    overflow: hidden
+}
+
+.techwave_fn_user_billing .payment__methods .ready .edit_wrapper .edit__popup ul {
+    list-style-type: none;
+    background-color: var(--techwave-some-a-bg-color);
+    border-radius: 5px;
+    margin: 0;
+    padding: 15px 20px
+}
+
+.techwave_fn_user_billing .payment__methods .ready .edit_wrapper .edit__popup li {
+    margin: 0 0 3px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.techwave_fn_user_billing .payment__methods .ready .primary {
+    display: block;
+    height: 20px;
+    padding: 0 15px;
+    background-color: var(--techwave-main-color);
+    color: #fff;
+    font-size: 11px;
+    line-height: 20px;
+    border-radius: 15px
+}
+
+.techwave_fn_user_billing .payment__methods .ready .primary span {
+    position: relative;
+    top: 1px
+}
+
+.techwave_fn_user_billing .payment__methods .new .item {
+    border-radius: 5px;
+    background-color: var(--techwave-some-r-bg-color);
+    border: 1px solid var(--techwave-border-color);
+    position: relative;
+    padding: 30px 15px 27px;
+    text-align: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center
+}
+
+.techwave_fn_user_billing .payment__methods .new .item a {
+    z-index: 2
+}
+
+.techwave_fn_user_billing .payment__methods .new .add {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    margin-bottom: 9px
+}
+
+.techwave_fn_user_billing .payment__methods .new .add:after {
+    width: 2px;
+    height: 40px;
+    position: absolute;
+    content: '';
+    left: 50%;
+    margin-left: -1px;
+    background-color: var(--techwave-border-color);
+    top: 50%;
+    margin-top: -20px
+}
+
+.techwave_fn_user_billing .payment__methods .new .add:before {
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -1px;
+    background-color: var(--techwave-border-color)
+}
+
+.techwave_fn_user_billing .payment__methods .new .text {
+    font-size: 14px;
+    line-height: 1;
+    color: var(--techwave-heading-color)
+}
+
+.techwave_fn_aichatbot_page .chat__page {
+    width: 100%;
+    padding-top: 38px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    z-index: 3
+}
+
+.techwave_fn_aichatbot_page .chat__sidebar,
+.techwave_fn_doc_page .docsidebar,
+.techwave_fn_image_generation_page .generation__sidebar {
+    width: 300px;
+    min-width: 300px;
+    border-left: 1px solid var(--techwave-border-color);
+    background-color: var(--techwave-header-bg-color);
+    top: var(--techwave-header-height);
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    transform: translateX(105%);
+    transition: .2s
+}
+
+.techwave_fn_wrapper.fn__has_sidebar .techwave_fn_aichatbot_page .chat__sidebar,
+.techwave_fn_wrapper.fn__has_sidebar .techwave_fn_doc_page .docsidebar,
+.techwave_fn_wrapper.fn__has_sidebar .techwave_fn_image_generation_page .generation__sidebar {
+    transform: translateX(0)
+}
+
+.techwave_fn_aichatbot_page .chat__sidebar .sidebar_content,
+.techwave_fn_doc_page .docsidebar,
+.techwave_fn_image_generation_page .generation__sidebar .sidebar_details {
+    padding: 20px
+}
+
+.techwave_fn_aichatbot_page .chat__sidebar .sidebar_content ul,
+.techwave_fn_doc_page .docsidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+.fn__chat_link {
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 40px 0 20px;
+    border: 1px solid var(--techwave-border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-family: var(--techwave-heading-font-family);
+    color: var(--techwave-body-color);
+    position: relative;
+    cursor: pointer;
+    user-select: none
+}
+
+.fn__chat_link:hover {
+    border-color: var(--techwave-body-color)
+}
+
+.fn__chat_link a:hover,
+.fn__chat_link.active {
+    border-color: var(--techwave-main-color)
+}
+
+.fn__chat_link.active {
+    color: var(--techwave-heading-color)
+}
+
+.fn__chat_link .text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.fn__chat_link .options {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block
+}
+
+.fn__chat_link .options__list,
+.fn__chat_link .trigger {
+    margin: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.fn__chat_link.opened .trigger span {
+    border-left-color: var(--techwave-heading-color);
+    border-right-color: var(--techwave-heading-color)
+}
+
+.fn__chat_link.opened .trigger {
+    background-color: var(--techwave-some-a-bg-color)
+}
+
+.fn__chat_link .trigger {
+    background-color: transparent;
+    padding: 0;
+    outline: 0;
+    border: none;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0
+}
+
+.fn__chat_link .options__list,
+.fn__chat_link .trigger:hover,
+.techwave_fn_doc_page .docsidebar .current>a,
+.techwave_fn_doc_page .docsidebar li:hover>a {
+    background-color: var(--techwave-some-a-bg-color)
+}
+
+.fn__chat_link .trigger span {
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 3px;
+    border-left: 3px solid var(--techwave-body-color);
+    border-right: 3px solid var(--techwave-body-color)
+}
+
+.fn__chat_link .trigger span:after {
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    left: 3px;
+    content: '';
+    position: absolute;
+    background-color: var(--techwave-body-color)
+}
+
+.fn__chat_link.opened {
+    z-index: 10
+}
+
+.fn__chat_link.opened .options__popup {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0)
+}
+
+.fn__chat_link .options__popup {
+    position: absolute;
+    top: 100%;
+    right: -1px;
+    width: 140px;
+    transition: .3s;
+    padding-top: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px)
+}
+
+.fn__chat_link .options__list {
+    list-style-type: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column
+}
+
+.fn__chat_link .save_options,
+.fn__chat_link .save_options button {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    -ms-align-items: center
+}
+
+.fn__chat_link .options__list button {
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    padding: 0;
+    margin: 0 0 3px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family);
+    text-decoration: none;
+    overflow: hidden;
+    transition: .3s
+}
+
+.fn__chat_link.live_edit .save_options,
+.fn__chat_link.live_edit input,
+.techwave_fn_models .loading .fn__preloader {
+    opacity: 1;
+    visibility: visible
+}
+
+.fn__chat_comment .new__chat,
+.fn__chat_link input,
+.fn__chat_link.live_edit .options,
+.fn__chat_link.live_edit .text,
+.techwave_fn_models .loading .tab__item {
+    opacity: 0;
+    visibility: hidden
+}
+
+.fn__chat_link input {
+    position: absolute;
+    height: 24px;
+    left: 12px;
+    right: 63px;
+    margin: -11px 0 0;
+    padding: 0 7px;
+    top: 50%;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-family: var(--techwave-heading-font-family);
+    color: var(--techwave-body-color);
+    background-color: transparent;
+    outline: 0;
+    min-width: inherit;
+    border: 1px solid var(--techwave-border-color);
+    border-radius: 5px
+}
+
+.fn__chat_link .save_options {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden
+}
+
+.fn__chat_link .save_options button {
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+    border-radius: 5px;
+    background-color: var(--techwave-some-a-bg-color);
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--techwave-heading-color)
+}
+
+.fn__chat_link .save_options button:hover {
+    background-color: var(--techwave-main-color);
+    color: #fff
+}
+
+.fn__chat_link .save_options .fn__svg {
+    width: 10px;
+    height: 10px
+}
+
+.techwave_fn_aichatbot_page .chat__comment {
+    margin-top: auto;
+    position: sticky;
+    bottom: 0;
+    padding: 20px 0;
+    background-color: var(--techwave-site-bg-color)
+}
+
+.fn__chat_comment .new__chat {
+    position: absolute;
+    width: 500px;
+    max-width: 100%;
+    bottom: 100%;
+    margin-bottom: 53px;
+    left: 50%;
+    background-color: var(--techwave-some-r-bg-color);
+    border: 1px solid var(--techwave-border-color);
+    border-radius: 5px;
+    padding: 35px 40px 33px;
+    text-align: center;
+    transform: translateY(-20px) translateX(-50%) translateZ(0);
+    pointer-events: none;
+    transition: .3s
+}
+
+.fn__chat_comment.neww .new__chat {
+    transform: translateY(0) translateX(-50%) translateZ(0);
+    opacity: 1;
+    visibility: visible
+}
+
+.fn__generation_list .fn__gl__item:hover .all_options,
+.fn__icon_options:hover .fn__icon_popup {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all
+}
+
+.fn__chat_comment .new__chat:after {
+    position: absolute;
+    left: 50%;
+    margin-left: -19px;
+    top: 100%;
+    margin-top: -1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 19px 0;
+    border-color: var(--techwave-some-r-bg-color) transparent transparent transparent;
+    content: '';
+    filter: drop-shadow(0px 1px var(--techwave-border-color))
+}
+
+.fn__chat_comment .new__chat * {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--techwave-body-color);
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__chat_comment textarea,
+.fn__chatbot .chat,
+.fn__icon_options .fn__icon_popup a,
+.fn__icon_options .fn__icon_popup li,
+.techwave_fn_doc_page .docsidebar a,
+.techwave_fn_image_generation_page .generation_header .info,
+.techwave_fn_image_generation_page .header_bottom textarea {
+    font-weight: 400;
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__hidden_textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: inherit;
+    opacity: 0;
+    pointer-events: none;
+    overflow-y: scroll
+}
+
+.fn__chat_comment textarea {
+    border: 2px solid var(--techwave-border-color);
+    background-color: transparent;
+    border-radius: 5px;
+    outline: 0;
+    display: block;
+    width: 100%;
+    padding: 18px 72px 16px 20px;
+    font-size: 16px;
+    line-height: 22px;
+    max-height: 170px;
+    resize: none;
+    overflow-y: hidden;
+    color: var(--techwave-heading-color)
+}
+
+.fn__chat_comment button,
+.fn__new_chat_link {
+    color: var(--techwave-heading-color);
+    background-color: var(--techwave-some-a-bg-color)
+}
+
+#fn__chat_textarea::-webkit-scrollbar {
+    width: 0
+}
+
+.fn__chat_comment textarea:focus,
+.techwave_fn_image_generation_page .header_bottom textarea:focus {
+    border-color: var(--techwave-main-color)
+}
+
+.fn__chat_comment button {
+    position: absolute;
+    width: 60px;
+    height: 44px;
+    bottom: 8px;
+    right: 8px;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    transition: .3s
+}
+
+.fn__model_item.new .item .add:after,
+.fn__model_item.new .item .add:before,
+.fn__quantity a {
+    background-color: var(--techwave-border-color)
+}
+
+.fn__chat_comment button.disabled {
+    cursor: not-allowed;
+    opacity: .5
+}
+
+.fn__chat_comment button:hover,
+.fn__new_chat_link:hover {
+    opacity: .8
+}
+
+.fn__chat_comment .fn__svg {
+    width: 21px;
+    height: 21px
+}
+
+.fn__new_chat_link {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px 0 44px;
+    position: relative;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: var(--techwave-heading-font-family);
+    border-radius: 5px
+}
+
+.fn__new_chat_link .text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    top: 1px
+}
+
+.fn__new_chat_link .icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    display: block;
+    border-radius: 100%;
+    background-color: #454449;
+    left: 10px;
+    top: 50%;
+    margin-top: -12px
+}
+
+.fn__new_chat_link .icon:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background-color: #b3aac7;
+    top: 50%;
+    left: 50%;
+    margin: -4px 0 0 -1px
+}
+
+.fn__new_chat_link .icon:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background-color: #b3aac7;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -4px
+}
+
+.fn__chatbot .chat>:last-child:not(ul),
+.fn__chatbot .chat__box:last-child,
+.fn__icon_options .fn__icon_popup li:last-child,
+.fn__select_model .all_models li:last-child {
+    margin-bottom: 0
+}
+
+.fn_contact_form .input_list input,
+.fn_contact_form .input_list textarea,
+.techwave_fn_aichatbot_page .chat__item.active {
+    display: block
+}
+
+.fn__chatbot .chat__box {
+    position: relative;
+    margin-bottom: 20px
+}
+
+.fn__chatbot .author * {
+    position: relative;
+    top: 1px
+}
+
+.fn__chatbot .chat {
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.375
+}
+
+.fn__chatbot .chat a {
+    text-decoration: underline;
+    color: var(--techwave-main-color)
+}
+
+.fn__chatbot .chat a:hover {
+    text-decoration: none
+}
+
+.fn__chatbot .your__chat .chat {
+    background-color: var(--techwave-some-a-bg-color);
+    color: var(--techwave-heading-color)
+}
+
+.fn__chatbot .bot__chat .author {
+    background-color: var(--techwave-some-a-bg-color);
+    color: var(--techwave-body-color)
+}
+
+.fn__chatbot .bot__chat .chat {
+    background-color: var(--techwave-some-r-bg-color);
+    border: 1px solid var(--techwave-border-color)
+}
+
+.techwave_fn_doc_page .doccontent * {
+    margin-bottom: 20px
+}
+
+.techwave_fn_doc_page .docsidebar li {
+    position: relative;
+    margin-bottom: 4px
+}
+
+.techwave_fn_doc_page .docsidebar a {
+    border-radius: 5px;
+    color: var(--techwave-heading-color);
+    text-decoration: none;
+    min-height: 36px;
+    padding: 5px 20px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    position: relative
+}
+
+.techwave_fn_image_generation_page .generation__page {
+    position: relative;
+    z-index: 2
+}
+
+.techwave_fn_image_generation_page .generation_more {
+    padding: 60px 40px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center
+}
+
+.techwave_fn_image_generation_page .generation_more .techwave_fn_button {
+    padding: 0 57px
+}
+
+.techwave_fn_image_generation_page .generation_header {
+    padding: 40px;
+    border-bottom: 1px solid var(--techwave-border-color)
+}
+
+.techwave_fn_image_generation_page .generation_header .header_top {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    -ms-align-items: center;
+    align-items: center;
+    margin-bottom: 25px
+}
+
+.techwave_fn_image_generation_page .generation_header .setup {
+    -ms-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    column-gap: 15px
+}
+
+.techwave_fn_image_generation_page .generation_header .info {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    letter-spacing: 0;
+    color: var(--techwave-body-color)
+}
+
+.fn__generation_item .item_header .prompt_title,
+.fn__icon_options .fn__icon_popup a,
+.fn__icon_options .fn__icon_popup li,
+.fn__select_model .all_models a,
+.fn__select_model .all_models li,
+.techwave_fn_image_generation_page .header_bottom textarea {
+    font-size: 16px;
+    color: var(--techwave-heading-color)
+}
+
+.techwave_fn_image_generation_page .sidebar__trigger {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--techwave-some-a-bg-color);
+    border-radius: 100%;
+    color: var(--techwave-heading-color);
+    position: relative
+}
+
+.techwave_fn_image_generation_page .sidebar__trigger .fn__svg {
+    width: 24px;
+    height: 24px;
+    transition: .3s
+}
+
+.techwave_fn_image_generation_page .header_bottom textarea {
+    border: 2px solid var(--techwave-border-color);
+    background-color: transparent;
+    border-radius: 5px;
+    outline: 0;
+    display: block;
+    width: 100%;
+    padding: 18px 20px 16px;
+    line-height: 22px;
+    max-height: 170px;
+    resize: none;
+    overflow-y: hidden
+}
+
+.fn__icon_options .fn__icon_popup ul,
+.fn__select_model .all_models ul {
+    background-color: var(--techwave-some-a-bg-color);
+    padding: 15px 20px;
+    list-style-type: none
+}
+
+.techwave_fn_image_generation_page .include_area {
+    margin-bottom: 10px;
+    position: relative
+}
+
+.techwave_fn_image_generation_page .exclude_area {
+    position: relative;
+    overflow: hidden
+}
+
+.techwave_fn_image_generation_page .generate_section {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: flex-end
+}
+
+.techwave_fn_image_generation_page .generate_section #generate_it {
+    margin: 10px 0 10px 20px
+}
+
+.techwave_fn_image_generation_page .generation__sidebar .sidebar_details .title {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--techwave-heading-color);
+    font-family: var(--techwave-heading-font-family);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center
+}
+
+.techwave_fn_image_generation_page .generation__sidebar .sidebar_details .title .fn__tooltip {
+    margin-left: 8px
+}
+
+.techwave_fn_image_generation_page .generation__sidebar .sidebar_details .title .fn__svg {
+    display: block;
+    width: 14px;
+    height: 14px;
+    color: var(--techwave-body-color)
+}
+
+.techwave_fn_image_generation_page .generation__sidebar .sidebar_model {
+    padding: 30px 20px;
+    border-bottom: 1px solid var(--techwave-border-color);
+    position: relative;
+    z-index: 5
+}
+
+.techwave_fn_image_generation_page .generation__sidebar .number_of_images {
+    margin-bottom: 29px
+}
+
+.techwave_fn_image_generation_page .generation__sidebar .number_of_images .title {
+    margin-bottom: 9px
+}
+
+.techwave_fn_image_generation_page .generation__sidebar .img_sizes .title {
+    margin-bottom: 10px
+}
+
+.techwave_fn_image_generation_page .generation__sidebar .guidance_scale {
+    margin-bottom: 23px
+}
+
+.fn__icon_options.align_right .fn__icon_popup {
+    left: auto;
+    right: 0
+}
+
+.fn__icon_options .fn__icon_popup {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 240px;
+    margin: 0;
+    padding: 5px 0 0;
+    transition: .3s;
+    pointer-events: none
+}
+
+.fn__icon_options.medium_size .fn__icon_button {
+    width: 40px;
+    height: 40px
+}
+
+.fn__icon_options.medium_size .fn__icon_button .fn__svg {
+    width: 16px;
+    height: 16px
+}
+
+.fn__icon_options .fn__icon_popup ul {
+    border-radius: 5px;
+    margin: 0
+}
+
+.fn__icon_options .fn__icon_popup li {
+    margin: 0 0 3px
+}
+
+.fn__icon_options .fn__icon_popup a {
+    text-decoration: none;
+    overflow: hidden
+}
+
+.fn__icon_options .fn__icon_popup a:hover {
+    color: var(--techwave-main-color);
+    opacity: .9
+}
+
+.fn__icon_options .fn__icon_popup .high_priorety a {
+    color: #f1416c
+}
+
+.fn__generation_item {
+    padding: 31px 40px 10px;
+    border-bottom: 1px solid var(--techwave-border-color);
+    position: relative
+}
+
+.fn__generation_item:hover {
+    z-index: 10
+}
+
+.fn__generation_item .item_header {
+    padding: 0 0 20px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 1
+}
+
+.fn__generation_item .item_header .item_options,
+.fn__generation_list .all_options,
+.fn__toggle {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.fn__generation_item .item_header .item_options {
+    width: auto;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    display: flex;
+    column-gap: 5px
+}
+
+.fn__generation_item .item_header .negative_prompt_title,
+.fn__generation_item .item_header .prompt_title {
+    padding: 0;
+    line-height: 22px;
+    align-self: flex-end;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    --chakra-line-clamp: 1;
+    letter-spacing: 0;
+    margin: 0;
+    font-weight: 400;
+    font-family: var(--techwave-heading-font-family);
+    overflow: hidden;
+    -webkit-box-orient: vertical
+}
+
+.fn__generation_item .item_header .title_holder,
+.techwave_fn_font .techwave_fn_button {
+    width: 100%
+}
+
+.fn__select_model .all_models a.selected,
+.fn__select_model .subtitle {
+    color: var(--techwave-body-color)
+}
+
+.fn__generation_item .item_header .negative_prompt_title {
+    font-size: 14px;
+    color: var(--techwave-body-color)
+}
+
+.fn__generation_list .fn__gl_item {
+    margin: 0 0 20px;
+    padding: 0 0 0 20px;
+    width: 25%
+}
+
+.fn__generation_list .fn__gl__item {
+    width: 100%;
+    position: relative
+}
+
+.fn__generation_list .fn__gl__item:before {
+    content: "";
+    height: 0;
+    display: block;
+    padding-bottom: 100%
+}
+
+.fn__generation_list .abs_item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.fn__bookmark,
+.fn__generation_list .all_options {
+    left: 10px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+.fn__generation_list .abs_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px
+}
+
+.fn__generation_list .all_options {
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    flex-wrap: wrap;
+    transform: translateY(20px);
+    transition: .3s
+}
+
+.fn__generation_list .all_options .fn__icon_options {
+    margin: 0 5px 5px 0
+}
+
+.fn__toggle {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    column-gap: 7px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__range,
+.fn__select_model .model_open,
+.fn_contact_form .input_list ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.fn__toggle .t_in {
+    position: relative;
+    width: 34px;
+    height: 20px
+}
+
+.fn__toggle .t_content:before,
+.fn_contact_form .empty_notice:before,
+.fn_contact_form .returnmessage:before {
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: var(--techwave-main-color1);
+    content: '';
+    opacity: .1;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px
+}
+
+.fn__toggle .t_content:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    -webkit-mask-composite: source-out;
+    mask-composite: exclude;
+    -webkit-animation: 4s infinite alternate animatedgradient;
+    animation: 4s infinite alternate animatedgradient;
+    background: #454449
+}
+
+.fn__range .slider:after,
+.fn__toggle .t_slider,
+.fn__toggle input:checked+.t_slider {
+    background-color: var(--techwave-main-color)
+}
+
+.fn__toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0
+}
+
+.fn__toggle .t_slider {
+    position: absolute;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    left: 4px;
+    top: 50%;
+    margin-top: -6px;
+    border-radius: 100%;
+    -webkit-transition: .4s;
+    transition: .4s;
+    background-color: #454449
+}
+
+.fn__bookmark,
+.fn__model_item .item,
+.techwave_fn_font .font__dialog {
+    background-color: var(--techwave-some-r-bg-color)
+}
+
+.fn__toggle input:checked+.t_slider {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px)
+}
+
+.fn__toggle input:checked~.t_content:after {
+    background: -moz-linear-gradient(270deg, var(--techwave-main-color1), var(--techwave-main-color2), var(--techwave-main-color1), var(--techwave-main-color2)) border-box;
+    background: -webkit-linear-gradient(270deg, var(--techwave-main-color1), var(--techwave-main-color2), var(--techwave-main-color1), var(--techwave-main-color2)) border-box;
+    background: linear-gradient(270deg, var(--techwave-main-color1), var(--techwave-main-color2), var(--techwave-main-color1), var(--techwave-main-color2)) border-box
+}
+
+.fn__toggle .t_in {
+    border-radius: 34px
+}
+
+.fn__toggle .t_in:before {
+    border-radius: 50%
+}
+
+.fn__select_model .all_models {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    right: 0;
+    padding-top: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: .3s;
+    pointer-events: none
+}
+
+.fn__select_model.opened .all_models {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translateY(0)
+}
+
+.fn__select_model .all_models ul {
+    border-radius: 5px;
+    margin: 0
+}
+
+.fn__quantity a.increase:before,
+.fn__quantity a:after {
+    background-color: var(--techwave-heading-color);
+    left: 50%;
+    top: 50%;
+    content: ''
+}
+
+.fn__select_model .all_models li {
+    margin: 0 0 3px;
+    font-weight: 400;
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__select_model .all_models a {
+    font-weight: 400;
+    font-family: var(--techwave-heading-font-family);
+    text-decoration: none;
+    overflow: hidden
+}
+
+.fn__select_model .all_models a:hover {
+    color: var(--techwave-main-color);
+    opacity: .9
+}
+
+.fn__select_model .model_open {
+    text-decoration: none;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    padding-right: 50px;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none
+}
+
+.fn__select_model .fn__icon_button {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    right: 0
+}
+
+.fn__select_model .user_img {
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover
+}
+
+.fn__select_model .subtitle,
+.fn__select_model .title {
+    margin: 0;
+    padding: 0;
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__select_model .subtitle {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 11px
+}
+
+.fn__model_item .item__info .title,
+.fn__model_item.new .item .text,
+.fn__quantity input,
+.fn__range .value,
+.fn__select_model .title {
+    color: var(--techwave-heading-color)
+}
+
+.fn__select_model .title {
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 16px
+}
+
+.fn__quantity {
+    width: 120px;
+    height: 40px;
+    position: relative
+}
+
+.fn__quantity a {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    border-radius: 100%;
+    top: 50%;
+    margin-top: -12px
+}
+
+.fn__quantity a:after {
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    margin: -1px 0 0 -4px
+}
+
+.fn__quantity a.increase:before {
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    margin: -4px 0 0 -1px
+}
+
+.fn__quantity .decrease {
+    left: 8px
+}
+
+.fn__quantity .increase {
+    right: 8px
+}
+
+.fn__quantity input {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 20px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 34px;
+    border: 2px solid var(--techwave-border-color)
+}
+
+.fn__range .slider,
+.fn__range input {
+    display: block;
+    height: 4px;
+    border-radius: 5px
+}
+
+.fn__quantity input::-webkit-inner-spin-button,
+.fn__quantity input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.fn__quantity input[type=number] {
+    -moz-appearance: textfield
+}
+
+.fn__range {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center
+}
+
+.fn__range .range_in {
+    position: relative;
+    width: 100%
+}
+
+.fn__range .slider {
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -2px;
+    pointer-events: none
+}
+
+.fn__range .slider:after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: '';
+    border-radius: 5px 0 0 5px
+}
+
+.fn__range .slider:before {
+    width: 14px;
+    height: 14px;
+    background: var(--techwave-heading-color);
+    cursor: pointer;
+    border-radius: 100%;
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 50%;
+    margin-top: -7px;
+    content: '';
+    z-index: 2
+}
+
+.fn__range .value {
+    flex: auto;
+    width: 40px;
+    text-align: right;
+    padding-left: 10px;
+    font-family: var(--techwave-heading-font-family);
+    font-size: 16px
+}
+
+.fn__range input {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 0;
+    outline: 0;
+    border: none;
+    background-color: var(--techwave-some-a-bg-color)
+}
+
+.fn__range input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: var(--techwave-heading-color);
+    cursor: pointer;
+    border-radius: 100%;
+    opacity: 0
+}
+
+.fn__range input::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    background: var(--techwave-heading-color);
+    cursor: pointer;
+    border-radius: 100%;
+    z-index: 3;
+    opacity: 0
+}
+
+.techwave_fn_privacy_page .privacypage hr {
+    margin: 30px 0
+}
+
+.techwave_fn_privacy_page .privacypage h4 {
+    font-weight: 500;
+    font-size: 22px
+}
+
+.fn_contact_form .input_list ul {
+    margin: 0 0 0 -10px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none
+}
+
+.fn_contact_form .input_list li {
+    margin: 0 0 10px;
+    padding: 0 0 0 10px;
+    width: 100%
+}
+
+.fn_contact_form .input_list li:last-child {
+    margin-top: 10px
+}
+
+.fn_contact_form .empty_notice,
+.fn_contact_form .returnmessage {
+    padding: 20px;
+    width: 100%;
+    display: none;
+    color: var(--techwave-heading-color);
+    margin-top: 20px;
+    position: relative;
+    pointer-events: none
+}
+
+.techwave_fn_contact_page .contactpage {
+    padding: 40px 0;
+    font-size: 18px;
+    line-height: 24px
+}
+
+.techwave_fn_models_page .models__filter {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    column-gap: 50px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10;
+    flex-wrap: wrap
+}
+
+.marquee,
+.techwave_fn_models_page .models__filter .filter__left {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex
+}
+
+.techwave_fn_models_page .models__filter .filter__right {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    column-gap: 5px;
+    margin: 5px 0
+}
+
+.techwave_fn_models_page .filter__search {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.techwave_fn_models_page .filter__search input {
+    margin: 5px 10px 5px 0
+}
+
+.techwave_fn_models_page .filter__search a {
+    margin: 5px 0
+}
+
+.techwave_fn_models_page .models__more {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px
+}
+
+.tab__item.active {
+    display: block
+}
+
+.fn__model_item .item__author,
+.fn__model_item.new .item,
+.techwave_fn_font {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.fn__model_item {
+    margin: 0 0 20px;
+    padding: 0 0 0 20px;
+    width: 20%
+}
+
+.fn__model_item .item {
+    border: 1px solid var(--techwave-border-color);
+    border-radius: 5px;
+    position: relative;
+    min-height: 100%
+}
+
+.fn__model_item.new .item a {
+    z-index: 3
+}
+
+.fn__model_item.new .item {
+    padding: 30px 15px 27px;
+    text-align: center;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center
+}
+
+.fn__model_item.new .item .add {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    margin-bottom: 29px
+}
+
+.fn__model_item.new .item .add:after {
+    width: 2px;
+    height: 80px;
+    position: absolute;
+    content: '';
+    left: 50%;
+    margin-left: -1px;
+    top: 50%;
+    margin-top: -40px
+}
+
+.fn__model_item.new .item:hover {
+    border-color: var(--techwave-main-color)
+}
+
+.fn__model_item.new .item .add:before {
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -1px
+}
+
+.fn__model_item.new .item .text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__model_item .item:hover .fn__bookmark {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all
+}
+
+.fn__model_item .img:before {
+    height: 0;
+    content: '';
+    padding-bottom: 100%;
+    display: block
+}
+
+.fn__model_item .img {
+    position: relative;
+    margin: -1px -1px 0
+}
+
+.fn__model_item .img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    border-radius: 5px 5px 0 0
+}
+
+.fn__model_item .item__info {
+    padding: 18px 15px 14px
+}
+
+.fn__model_item .item__info .title {
+    margin: 0 0 5px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--techwave-heading-font-family)
+}
+
+.fn__model_item .item__info .desc {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--techwave-body-color);
+    font-family: var(--techwave-body-font-family);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical
+}
+
+.fn__bookmark,
+.fn__model_item .author_name,
+.techwave_fn_font label {
+    color: var(--techwave-heading-color)
+}
+
+.fn__model_item .item__author {
+    height: 41px;
+    border-top: 1px solid var(--techwave-border-color);
+    padding: 10px 15px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center
+}
+
+.fn__model_item .item__author img {
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 100%;
+    object-fit: cover
+}
+
+.fn__model_item .author_name {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--techwave-heading-font-family)
+}
+
+.TickerNews .item,
+.techwave_fn_intro .or h1 {
+    font-size: 150px;
+    font-family: sans-serif;
+    text-transform: uppercase
+}
+
+.fn__bookmark {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    z-index: 3
+}
+
+.fn__bookmark.has__bookmark .hasbook {
+    opacity: 1
+}
+
+.fn__bookmark.has__bookmark .hasntbook {
+    opacity: 0
+}
+
+.fn__bookmark .fn__svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -8px 0 0 -8px
+}
+
+.fn__bookmark .hasbook {
+    opacity: 0;
+    color: var(--techwave-main-color)
+}
+
+.TickerNews .item,
+.techwave_fn_intro .or h1 span {
+    color: var(--techwave-site-bg-color);
+    -webkit-text-stroke: 1px var(--techwave-main-color);
+    text-stroke: 1px var(--techwave-main-color);
+    letter-spacing: -6px
+}
+
+.font__trigger {
+    width: 11px;
+    height: 60px;
+    position: fixed;
+    right: 300px;
+    margin-right: 14px;
+    top: 50%;
+    margin-top: -30px;
+    z-index: 15;
+    cursor: pointer
+}
+
+.font__trigger:after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    top: -10px
+}
+
+.font__trigger:hover span,
+.font__trigger:hover span:after,
+.font__trigger:hover span:before {
+    background-color: var(--techwave-main-color)
+}
+
+.font__trigger span,
+.font__trigger span:after,
+.font__trigger span:before {
+    width: 1px;
+    background-color: var(--techwave-border-color);
+    position: absolute;
+    transition: .2s
+}
+
+.font__trigger span {
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 5px
+}
+
+.font__trigger span:after,
+.font__trigger span:before {
+    top: 50%;
+    margin-top: -20px;
+    height: 40px;
+    content: ''
+}
+
+.font__trigger span:before {
+    right: 100%;
+    margin-right: 5px
+}
+
+.font__trigger span:after {
+    left: 100%;
+    margin-left: 5px
+}
+
+.techwave_fn_font {
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 110;
+    background-color: var(--techwave-site-bg-color);
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    padding: 40px
+}
+
+.TickerNews .js-marquee-wrapper,
+.fn__center_title .lines,
+.techwave_fn_intro {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.TickerNews,
+.TickerNews .ti_wrapper,
+.txt_unlim {
+    overflow: hidden;
+    width: 100%
+}
+
+.techwave_fn_font .font__closer_link {
+    position: fixed;
+    right: 35px;
+    top: 35px;
+    z-index: 2
+}
+
+.techwave_fn_font .font__closer {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.techwave_fn_font .font__dialog {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 5px;
+    padding: 35px 50px 40px;
+    position: relative;
+    border: 1px solid var(--techwave-border-color);
+    z-index: 3
+}
+
+.techwave_fn_font label {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    font-family: var(--techwave-heading-font-family)
+}
+
+.tooltipster-sidetip.tooltipster-techwave .tooltipster-box {
+    border: 1px solid var(--techwave-border-color);
+    background: var(--techwave-some-r-bg-color)
+}
+
+.tooltipster-sidetip.tooltipster-techwave .tooltipster-content {
+    color: var(--techwave-heading-color);
+    font-size: 14px
+}
+
+.tooltipster-sidetip.tooltipster-techwave.tooltipster-bottom .tooltipster-arrow:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    border: 1px solid var(--techwave-border-color);
+    background-color: var(--techwave-some-r-bg-color)
+}
+
+.tooltipster-sidetip.tooltipster-techwave.tooltipster-left .tooltipster-arrow:after,
+.tooltipster-sidetip.tooltipster-techwave.tooltipster-right .tooltipster-arrow:after {
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    border: 1px solid var(--techwave-border-color);
+    background-color: var(--techwave-some-r-bg-color);
+    content: '';
+    position: absolute
+}
+
+.tooltipster-sidetip.tooltipster-techwave.tooltipster-bottom .tooltipster-arrow {
+    background-color: transparent;
+    top: -1px
+}
+
+.tooltipster-sidetip.tooltipster-techwave.tooltipster-right .tooltipster-arrow {
+    left: -1px;
+    background-color: transparent
+}
+
+.tooltipster-sidetip.tooltipster-techwave.tooltipster-right .tooltipster-arrow:after {
+    left: 5px
+}
+
+.tooltipster-sidetip.tooltipster-techwave.tooltipster-left .tooltipster-arrow {
+    right: -1px;
+    background-color: transparent
+}
+
+.tooltipster-sidetip.tooltipster-techwave.tooltipster-left .tooltipster-arrow:after {
+    right: 5px
+}
+
+.techwave_fn_intro {
+    padding: 150px 20px 100px;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center
+}
+
+.techwave_fn_intro .first {
+    text-align: center;
+    margin-bottom: 54px
+}
+
+.techwave_fn_intro .txt {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none
+}
+
+.techwave_fn_intro .mac {
+    margin: 0 -20px 86px
+}
+
+.techwave_fn_intro .mac img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.techwave_fn_intro .livechat {
+    padding: 24px;
+    position: relative;
+    border: 2px dashed #252525;
+    border-radius: 30px;
+    width: 825px;
+    max-width: 100%;
+    margin: 41px auto 133px
+}
+
+.techwave_fn_intro .livechat .chat__comment {
+    margin-top: 20px
+}
+
+.techwave_fn_intro .livechat .chat_decor {
+    position: absolute;
+    right: 47px;
+    z-index: 5;
+    top: 100%;
+    margin-top: -25px
+}
+
+.techwave_fn_intro .or {
+    padding-top: 87px;
+    padding-bottom: 55px;
+    text-align: center
+}
+
+.techwave_fn_intro .or h1 {
+    font-size: calc(50px + 5.211vw);
+    font-weight: 700
+}
+
+.fn__center_title {
+    text-align: center;
+    max-width: 700px
+}
+
+.fn__center_title h3.big {
+    font-size: 60px;
+    margin-top: -6px;
+    margin-bottom: 18px
+}
+
+.fn__center_title p {
+    margin: 0
+}
+
+.fn__center_title h3 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    text-shadow: 0 0 15px rgba(124, 95, 227, .35)
+}
+
+.fn__center_title .lines {
+    position: relative;
+    display: flex;
+    height: 18px;
+    margin-bottom: 34px;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center
+}
+
+.fn__center_title .lines span {
+    position: relative
+}
+
+.fn__center_title .lines .l,
+.fn__center_title .lines .r {
+    width: 100px;
+    height: 2px;
+    display: block;
+    background-color: var(--techwave-main-color)
+}
+
+.fn__center_title .lines span:after {
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: var(--techwave-main-color1);
+    content: '';
+    opacity: .35;
+    box-shadow: 0 0 10px
+}
+
+.fn__center_title .lines .c:after {
+    border-radius: 6px;
+    left: -2px;
+    right: -2px;
+    top: -2px;
+    bottom: -2px
+}
+
+.fn__center_title .lines .c {
+    width: 120px;
+    height: 18px;
+    display: block;
+    border: 2px solid var(--techwave-main-color);
+    margin: 0 10px;
+    border-radius: 6px
+}
+
+.TickerNews .js-marquee-wrapper {
+    display: flex;
+    flex-wrap: nowrap
+}
+
+.TickerNews .js-marquee,
+.techwave_fn_intro .templates div div,
+.techwave_fn_intro .templates ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.TickerNews .ti_wrapper {
+    position: relative
+}
+
+.TickerNews .ti_slide {
+    position: relative;
+    left: 0;
+    top: 0
+}
+
+.TickerNews .marquee {
+    overflow: hidden
+}
+
+.TickerNews .ti_content {
+    position: relative;
+    float: left
+}
+
+.TickerNews .js-marquee {
+    float: left;
+    display: flex;
+    flex-wrap: nowrap
+}
+
+.TickerNews .item {
+    float: left;
+    position: relative;
+    white-space: nowrap;
+    font-size: calc(50px + 5.211vw);
+    font-weight: 900
+}
+
+.techwave_fn_intro .templates {
+    width: 1650px;
+    max-width: 100%
+}
+
+.techwave_fn_intro .templates ul {
+    margin: 0 0 0 -50px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.techwave_fn_intro .templates li {
+    margin: 0 0 50px;
+    padding: 0 0 0 50px;
+    width: 50%
+}
+
+.techwave_fn_intro .templates .top {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    border: 1px solid var(--techwave-border-color);
+    border-radius: 5px;
+    transition: .4s;
+    position: relative
+}
+
+.techwave_fn_intro .templates .top:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 20px;
+    transform: translateY(-20px);
+    transition: .4s
+}
+
+.techwave_fn_intro .templates .top img {
+    display: block;
+    border-radius: 4px
+}
+
+.techwave_fn_intro .templates .top:hover:after {
+    transform: translateY(0)
+}
+
+.techwave_fn_intro .templates .top:hover {
+    transform: translateY(-20px)
+}
+
+.techwave_fn_intro .templates div div {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px
+}
+
+.techwave_fn_intro .templates .techwave_fn_button {
+    padding: 0 52px
+}
+
+#img_gen {
+    padding-top: 48px;
+    margin-bottom: 91px
+}
+
+#demos {
+    padding-top: 100px;
+    margin-bottom: 73px
+}
+
+@media(max-width:1400px) {
+    .fn__model_item {
+        width: 25%
+    }
+}
+
+@media(max-width:1367px) {
+    .techwave_fn_interactive_list li {
+        width: 100%;
+        max-width: 100%
+    }
+}
+
+@media(max-width:1200px) {
+    .fn__model_item {
+        width: 33.3333%
+    }
+}
+
+@media(max-width:1040px) {
+    :root {
+        --techwave-header-height: 80px
+    }
+    .container {
+        padding: 0 20px
+    }
+    .techwave_fn_image_generation_page .sidebar__trigger,
+    .techwave_fn_leftpanel .desktop_closer,
+    .techwave_fn_pricing .pricing__content {
+        display: none
+    }
+    .fn__mobile_pricing,
+    .techwave_fn_leftpanel .mobile_closer {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex
+    }
+    .font__trigger {
+        right: 0
+    }
+    .techwave_fn_accordion .acc__title {
+        font-size: 18px
+    }
+    .fn__generation_item,
+    .techwave_fn_accordion .acc__content,
+    .techwave_fn_accordion .acc__header,
+    .techwave_fn_changelog .item__content,
+    .techwave_fn_changelog .item__header,
+    .techwave_fn_footer,
+    .techwave_fn_image_generation_page .generation_header,
+    .techwave_fn_img_lightbox .lightbox__related,
+    .techwave_fn_img_lightbox .lightbox__tlimg,
+    .techwave_fn_interactive_list.modern a,
+    .techwave_fn_pricing .pricing__fields .item_col,
+    .techwave_fn_pricing .pricing__footer .item_col,
+    .techwave_fn_pricing .pricing__header .item_col,
+    .techwave_fn_pricing .pricing__heading .item,
+    .techwave_fn_sign,
+    .techwave_fn_sign .form__content {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+    .techwave_fn_aichatbot_page,
+    .techwave_fn_doc_page,
+    .techwave_fn_image_generation_page {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: column-reverse;
+        -moz-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        -o-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        min-height: inherit
+    }
+    .techwave_fn_wrapper.fn__has_sidebar .techwave_fn_content {
+        margin-right: 0
+    }
+    .techwave_fn_aichatbot_page .chat__sidebar,
+    .techwave_fn_image_generation_page .generation__sidebar,
+    .techwave_fn_wrapper.fn__has_sidebar .techwave_fn_doc_page .docsidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: auto;
+        right: auto;
+        top: auto;
+        min-width: 100%;
+        border-left: none;
+        border-bottom: 1px solid var(--techwave-border-color)
+    }
+    .techwave_fn_searchbar {
+        left: 0;
+        padding: 0 20px
+    }
+    .techwave_fn_searchbar .search__icon {
+        left: 20px
+    }
+    .techwave_fn_searchbar .search__closer {
+        right: 20px
+    }
+    .techwave_fn_searchbar .search__input {
+        padding-left: 25px;
+        padding-right: 30px
+    }
+    .fn__grid_items li {
+        width: 25%
+    }
+    .fn__gallery_item {
+        width: 33.3333%
+    }
+    .techwave_fn_header {
+        padding: 0 20px 0 60px;
+        left: 0
+    }
+    .techwave_fn_leftpanel .mobile_extra_closer {
+        position: absolute;
+        left: 100%;
+        width: calc(100vw - var(--techwave-left-panel-width));
+        top: 0;
+        bottom: 0;
+        background-color: var(--techwave-some-r-bg-color);
+        opacity: 0;
+        pointer-events: none;
+        margin-left: 1px
+    }
+    .section_home {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column
+    }
+    .section_home .section_left {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--techwave-border-color);
+        padding: 73px 20px 60px
+    }
+    .section_home .section_right {
+        width: 100%;
+        padding: 70px 20px
+    }
+    .section_home .company_info {
+        max-width: 100%
+    }
+    .techwave_fn_content {
+        margin-left: 0
+    }
+    .techwave_fn_leftpanel {
+        transform: translateX(-100%)
+    }
+    .techwave_fn_leftpanel .fn__icon_button {
+        right: -51px;
+        width: 40px;
+        height: 40px;
+        transform: rotate(180deg);
+        margin-top: -20px
+    }
+    .mobile-panel-opened .techwave_fn_leftpanel .fn__icon_button {
+        transform: rotate(0)
+    }
+    .mobile-panel-opened .techwave_fn_leftpanel .mobile_extra_closer {
+        opacity: .9;
+        pointer-events: all
+    }
+    .mobile-panel-opened .techwave_fn_content,
+    .mobile-panel-opened .techwave_fn_header {
+        transform: translateX(300px)
+    }
+    .mobile-panel-opened .techwave_fn_leftpanel {
+        transform: translateX(0)
+    }
+}
+
+@media(max-width:900px) {
+    .techwave_fn_pricing .item_row .item_col {
+        width: 25% !important;
+        max-width: 25% !important
+    }
+    .techwave_fn_pricing .pricing__header .price span {
+        font-size: 20px
+    }
+    .techwave_fn_pricing .pricing__fields .item_col,
+    .techwave_fn_pricing .pricing__footer .item_col,
+    .techwave_fn_pricing .pricing__header .item_col,
+    .techwave_fn_pricing .pricing__heading .item {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    .techwave_fn_img_lightbox .lightbox__top {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column
+    }
+    .techwave_fn_img_lightbox .lightbox__tl {
+        width: 100%
+    }
+    .techwave_fn_img_lightbox .lightbox__tr {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid var(--techwave-border-color)
+    }
+}
+
+@media(max-width:768px) {
+    .fn__mobile_pricing .pricing__item {
+        width: 100%
+    }
+    .fn__gallery_item,
+    .fn__generation_list .fn__gl_item,
+    .fn__grid_items li,
+    .fn__model_item {
+        width: 50%
+    }
+    .fn__gallery_items .item__info {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0)
+    }
+    .techwave_fn_footer_content {
+        flex-wrap: wrap
+    }
+    .techwave_fn_header .header__left {
+        display: none
+    }
+    .techwave_fn_header {
+        justify-content: flex-end
+    }
+}
+
+@media(max-width:480px) {
+    .container {
+        padding: 0 10px
+    }
+    .fn__generation_item,
+    .techwave_fn_accordion .acc__content,
+    .techwave_fn_accordion .acc__header,
+    .techwave_fn_changelog .item__content,
+    .techwave_fn_changelog .item__header,
+    .techwave_fn_image_generation_page .generation_header,
+    .techwave_fn_sign,
+    .techwave_fn_sign .form__content {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+    .fn__details_list li,
+    .fn__gallery_item,
+    .fn__generation_list .fn__gl_item,
+    .fn__model_item {
+        width: 100%
+    }
+    .fn__grid_items ul {
+        margin-left: -10px
+    }
+    .fn__grid_items li {
+        padding-left: 10px;
+        margin-bottom: 10px
+    }
+    .fn__nav_bar .user_opener {
+        width: 50px;
+        height: 50px
+    }
+    .techwave_fn_header {
+        padding-right: 10px
+    }
+    .fn__nav_bar .item_opener .dark_mode {
+        margin: -9px 0 0 -9px
+    }
+    .fn__nav_bar .bar__item {
+        margin-right: 5px
+    }
+    .fn__nav_bar .bar__item_user {
+        margin-left: 5px
+    }
+    .fn__nav_bar .item_opener {
+        width: 40px;
+        height: 40px
+    }
+    .fn__nav_bar .item_opener .fn__svg {
+        width: 18px;
+        height: 18px
+    }
+}
