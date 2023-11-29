@@ -4,11 +4,11 @@
 
 ![alt text](https://www.daulathussain.com/wp-content/uploads/2023/11/build-crypto-trading-bot-form-scratch.jpg)
 
-Build your own Decentralized Crypto trading bot form strach and master defi trading bot development, in which you can provide users with to experience and crypto trading with on the blockchain.
+Build your own Decentralized Crypto trading bot from scratch and master defi trading bot development, in which you can provide users with experience and crypto trading on the blockchain.
 
-Resource Final Code: https://www.theblockchaincoders.com/sourceCode/build-social-media-website-using-html-css-javascript
+Resource Final Code: 
 
-Get Pro Blockchain Developer Course : https://www.theblockchaincoders.com/pro-nft-marketplace
+Get Pro Blockchain Developer Course: https://www.theblockchaincoders.com/pro-nft-marketplace
 
 Support Creator: https://bit.ly/Support-Creator
 
